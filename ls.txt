@@ -1,0 +1,6 @@
+total 32
+-rw-r--r--@ 1 choonsiong  staff  1500 Mar 31 21:36 bookmarks.md
+-rw-r--r--@ 1 choonsiong  staff  1208 Mar 31 21:41 linux.md
+-rw-r--r--  1 choonsiong  staff    46 Apr  1 02:42 ls.txt
+-rw-r--r--  1 choonsiong  staff     0 Apr  1 02:43 ls2.txt
+-rw-r--r--@ 1 choonsiong  staff   326 Apr  1 02:34 shell.md
