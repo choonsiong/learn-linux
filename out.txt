@@ -1,7 +1,0 @@
-bookmarks.md
-linux.md
-ls.txt
-ls2.txt
-out.txt
-shell.md
-Tue Apr  1 02:50:19 +08 2025
