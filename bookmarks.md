@@ -29,3 +29,7 @@
 - [Tiny Core Linux](http://tinycorelinux.net/)
 - [Ubuntu](https://ubuntu.com/)
 - [Xubuntu](https://xubuntu.org/)
+
+## Misc
+
+- [rodsbooks.com](https://rodsbooks.com)
