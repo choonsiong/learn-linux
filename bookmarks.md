@@ -1,5 +1,6 @@
 # Bookmarks
 
+- [DistroWatch.com](https://distrowatch.com)
 - [GNU](https://www.gnu.org)
 	- [GPL](https://www.gnu.org/licenses/gpl-3.0.html)
 - [OSI - Open Source Initiative](https://opensource.org)
@@ -7,7 +8,6 @@
 
 ## Linux Distributions
 
-- [DistroWatch.com](https://distrowatch.com)
 - [AlmaLinux](https://almalinux.org/)
 - [Arch Linux](https://archlinux.org/)
 - [Debian](https://www.debian.org/)
