@@ -7,10 +7,21 @@
 
 ## Linux Distributions
 
+- [DistroWatch.com](https://distrowatch.com)
+- [AlmaLinux](https://almalinux.org/)
 - [Arch Linux](https://archlinux.org/)
 - [Debian](https://www.debian.org/)
+- [EndeavourOS](https://endeavouros.com/)
 - [Fedora](https://fedoraproject.org/)
+- [Kali Linux](https://www.kali.org/)
+- [Kubuntu](https://kubuntu.org/)
+- [Linux Mint](https://linuxmint.com/)
+- [Manjaro](https://manjaro.org/)
 - [openSUSE](https://www.opensuse.org/)
+- [Oracle Linux](https://www.oracle.com/my/linux/)
+- [Pop!_OS](https://system76.com/)
 - [Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
+- [Rocky Linux](https://rockylinux.org/)
 - [SUSE Linux Enterprise Server](https://www.suse.com/products/server/)
 - [Ubuntu](https://ubuntu.com/)
+- [Xubuntu](https://xubuntu.org/)
