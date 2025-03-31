@@ -10,6 +10,7 @@
 
 - [AlmaLinux](https://almalinux.org/)
 - [Arch Linux](https://archlinux.org/)
+	- [Installation Guide](https://wiki.archlinux.org/title/Installation_guide)
 - [Debian](https://www.debian.org/)
 	- [deb-multimedia](https://deb-multimedia.org)
 - [EndeavourOS](https://endeavouros.com/)
