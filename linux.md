@@ -1,4 +1,4 @@
-# Notes
+## Notes
 
 - Linux is a Unix-like operating system.
 	- An operating system is a bundle of programs that realize the basic functions of a computer. This includes managing the keyboard, screen, and mouse as well as the system resources.
