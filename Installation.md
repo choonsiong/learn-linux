@@ -14,9 +14,9 @@
         - [Installing Ubuntu in UEFI mode](https://help.ubuntu.com/community/UEFI)
         - [Managing EFI boot loaders for Linux](https://rodsbooks.com/efi-bootloaders/index.html)
 - Download ISO images
-    - burn to a DVD (or a USB flash drive) and boot the computer with it
+    - Burn to a DVD (or a USB flash drive) and boot the computer with it
         - to write ISO image to drive use program like [etcher](https://etcher.balena.io) or `dd` command on Linux
-    - on a virtual machine, use the ISO image as a virtual DVD drive
+    - On a virtual machine, use the ISO image as a virtual DVD drive
 - Network installation - the installation files are read from the network
-    - option 1, the installation is started from a USB flash drive, then the installer helps to establish the network connection and then loads all other data from the internet or from the local network
-    - option 2, requires that your computer can load the boot data from the local network, there must be a server on the local network that offers the Linux installer in the form of boot data
+    - Option 1, the installation is started from a USB flash drive, then the installer helps to establish the network connection and then loads all other data from the internet or from the local network
+    - Option 2, requires that your computer can load the boot data from the local network, there must be a server on the local network that offers the Linux installer in the form of boot data
