@@ -29,3 +29,11 @@
 - Installation location
     - Linux alone or in parallel with Windows
     - Multiple distributions on one computer?
+- Overview of the installation process (with Microsoft Windows already installed)
+    - Downsize Windows partition (do it on Windows)
+    - Prepare USB flash drive (copy the ISO image)
+    - Start Linux installation
+    - Create Linux partitions
+    - Select installation scope
+    - Configuration
+    - Setup boot loader (mostly GRUB) - responsible for starting Linux
