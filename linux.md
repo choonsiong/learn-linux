@@ -7,6 +7,8 @@
 	- The [500 fastest computers](https://top500.org/statistics/list/) in the world today all run Linux.
 - Strictly speaking, the term *Linux* only refers to the *kernel*, the innermost part (i.e., the core) of an operating system with very basic functions, such as memory management, process management, and control of the hardware.
 - A *Linux distribution* is the unit that consists of the actual operating system (kernel) and many additional programs. A distribution allows for a quick and convenient installation of Linux.
+	- Difference between distributions
+		- Scope and up-to-dateness
 
 ### Shells
 
