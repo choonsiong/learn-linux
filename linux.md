@@ -32,7 +32,7 @@
 		- Oracle Linux - a variant of RHEL from Oracle
 		- Red Hat - acquired by IBM in 2018, is the best-known and most successful Linux company in the world
 		- Ubuntu - the most popular distribution for home users by Canonical
-- GPL (General Public License) is backed by the Free Software Foundation (FSF), an organization founded by *Richard Stallman* to make high-quality software freely available.
+- [GPL (General Public License)](https://www.gnu.org/licenses/gpl-3.0.html) is backed by the Free Software Foundation (FSF), an organization founded by *Richard Stallman* to make high-quality software freely available.
 
 ### Shells
 
