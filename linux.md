@@ -28,6 +28,9 @@
 		- Debian - one of the oldest entirely free distribution, is intended for advanced Linux users
 		- Fedora - the free development branch of Red Hat Linux, new Linux features are often found in Fedora first and only later in other distributions
 		- Kali Linux - based on Debian, includes a huge collection of hacking and pen-testing tools
+		- openSUSE - a free Linux distribution based on enterprise versions of SUSE, but specifically intended for home users and developers
+		- Oracle Linux - a variant of RHEL from Oracle
+		- Red Hat - acquired by IBM in 2018, is the best-known and most successful Linux company in the world
 
 ### Shells
 
