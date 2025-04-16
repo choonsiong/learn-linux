@@ -25,6 +25,9 @@
 		- CentOS - end in December 2020
 		- CentOS Stream - unsuitable for long-term production use
 		- Chrome OS - developed by Google, optimized for notebooks and requires an active internet connection
+		- Debian - one of the oldest entirely free distribution, is intended for advanced Linux users
+		- Fedora - the free development branch of Red Hat Linux, new Linux features are often found in Fedora first and only later in other distributions
+		- Kali Linux - based on Debian, includes a huge collection of hacking and pen-testing tools
 
 ### Shells
 
