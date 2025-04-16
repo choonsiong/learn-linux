@@ -10,3 +10,5 @@
             - The partition must be specially marked
             - `/boot/efi`
             - ESP size at least 512 MiB, it is almost impossible to increase the size at a later date
+        - [Installing Ubuntu in UEFI mode](https://help.ubuntu.com/community/UEFI)
+        - [Managing EFI boot loaders for Linux](https://rodsbooks.com/efi-bootloaders/index.html)
