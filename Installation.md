@@ -9,3 +9,4 @@
         - The ESP must contain a VFAT file system, which is a Windows 95 compatible file system
             - The partition must be specially marked
             - `/boot/efi`
+            - ESP size at least 512 MiB, it is almost impossible to increase the size at a later date
