@@ -31,6 +31,7 @@
 		- openSUSE - a free Linux distribution based on enterprise versions of SUSE, but specifically intended for home users and developers
 		- Oracle Linux - a variant of RHEL from Oracle
 		- Red Hat - acquired by IBM in 2018, is the best-known and most successful Linux company in the world
+		- Ubuntu - the most popular distribution for home users by Canonical
 
 ### Shells
 
