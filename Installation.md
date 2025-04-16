@@ -31,9 +31,12 @@
     - Multiple distributions on one computer?
 - Overview of the installation process (with Microsoft Windows already installed)
     - Downsize Windows partition (do it on Windows)
+        - Partitions are sections on the SSD or hard disk
+        - Different operating systems often use different file systems - that is, different methods of storing files within the partition
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
     - Select installation scope
     - Configuration
     - Setup boot loader (mostly GRUB) - responsible for starting Linux
+        - For EFI machines, the boot loader is installed in a directory of the ESP
