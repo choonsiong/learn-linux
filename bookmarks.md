@@ -25,6 +25,7 @@
 - [Manjaro](https://manjaro.org/)
 - [openSUSE](https://www.opensuse.org/)
 - [Oracle Linux](https://www.oracle.com/my/linux/)
+- [Parted Magic](https://partedmagic.com)
 - [Pop!_OS](https://system76.com/)
 - [Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
 - [Rocky Linux](https://rockylinux.org/)
