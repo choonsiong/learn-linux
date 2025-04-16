@@ -13,4 +13,6 @@
         - [Arch Linux - Unified Extensible Firmware Interface](https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface)
         - [Installing Ubuntu in UEFI mode](https://help.ubuntu.com/community/UEFI)
         - [Managing EFI boot loaders for Linux](https://rodsbooks.com/efi-bootloaders/index.html)
-        
+- Download ISO images
+    - burn to a DVD and boot the computer with it
+    - on a virtual machine, use the ISO image as a virtual DVD drive
