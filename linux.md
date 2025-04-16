@@ -9,6 +9,15 @@
 - A *Linux distribution* is the unit that consists of the actual operating system (kernel) and many additional programs. A distribution allows for a quick and convenient installation of Linux.
 	- Difference between distributions
 		- Scope and up-to-dateness
+		- Installation and configuration tools
+		- Configuration of the desktop (KDE and GNOME)
+		- Hardware support
+		- Updates
+		- Rolling release
+		- Live system
+		- Target platform (CPU architecture)
+		- Support
+		- License
 
 ### Shells
 
