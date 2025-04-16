@@ -22,3 +22,7 @@
     - Option 2, requires that your computer can load the boot data from the local network, there must be a server on the local network that offers the Linux installer in the form of boot data
         - [FAI - Fully Automatic Installation](https://fai-project.org)
 - Cloud installation - the hosting or cloud company will take care the installation, you just select the desired distribution with your configuration (e.g. RAM size, CPU, etc) such as [AWS EC2](https://aws.amazon.com/pm/ec2/), then log in via SSH either using the cloud console or Linux terminal.
+- Installation mode
+    - Text mode installation
+    - Graphics mode installation
+    - Live system
