@@ -17,3 +17,4 @@
     - burn to a DVD (or a USB flash drive) and boot the computer with it
         - to write ISO image to drive use program like [etcher](https://etcher.balena.io) or `dd` command on Linux
     - on a virtual machine, use the ISO image as a virtual DVD drive
+- Network installation
