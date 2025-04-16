@@ -20,3 +20,4 @@
 - Network installation - the installation files are read from the network
     - Option 1, the installation is started from a USB flash drive, then the installer helps to establish the network connection and then loads all other data from the internet or from the local network
     - Option 2, requires that your computer can load the boot data from the local network, there must be a server on the local network that offers the Linux installer in the form of boot data
+        - [FAI - Fully Automatic Installation](https://fai-project.org)
