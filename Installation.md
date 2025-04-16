@@ -26,3 +26,6 @@
     - Text mode installation
     - Graphics mode installation
     - Live system
+- Installation location
+    - Linux alone or in parallel with Windows
+    - Multiple distributions on one computer?
