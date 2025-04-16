@@ -14,5 +14,6 @@
         - [Installing Ubuntu in UEFI mode](https://help.ubuntu.com/community/UEFI)
         - [Managing EFI boot loaders for Linux](https://rodsbooks.com/efi-bootloaders/index.html)
 - Download ISO images
-    - burn to a DVD and boot the computer with it
+    - burn to a DVD (or a USB flash drive) and boot the computer with it
+        - to write ISO image to drive use program like [etcher](https://etcher.balena.io)
     - on a virtual machine, use the ISO image as a virtual DVD drive
