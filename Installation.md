@@ -5,3 +5,4 @@
     - Renamed to *UEFI (Unified Extensible Firmware Interface)* after the participation of AMD, Apple, Microsoft, and others.
     - The biggest advantages compared to BIOS is EFI allows you to choose which of several installed operating systems you want to start when you boot the computer.
         - In the BIOS past, the *GRUB (Grand Unified Bootloader)* program is used
+    - EFI requires a special partition called the *EFI System Partition (ESP)*
