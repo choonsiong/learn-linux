@@ -18,6 +18,8 @@
 		- Target platform (CPU architecture)
 		- Support
 		- License
+	- Common Linux distributions
+		- AlmaLinux - A RHEL clone
 
 ### Shells
 
