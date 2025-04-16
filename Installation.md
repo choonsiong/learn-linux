@@ -8,3 +8,4 @@
     - EFI requires a special partition called the *EFI System Partition (ESP)*
         - The ESP must contain a VFAT file system, which is a Windows 95 compatible file system
             - The partition must be specially marked
+            - `/boot/efi`
