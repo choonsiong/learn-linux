@@ -19,7 +19,12 @@
 		- Support
 		- License
 	- Common Linux distributions
-		- AlmaLinux - A RHEL clone
+		- AlmaLinux - a RHEL clone
+		- Android - developed by Google for mobile devices and tablets
+		- Arch Linux - a rolling release distribution for technical users
+		- CentOS - end in December 2020
+		- CentOS Stream - unsuitable for long-term production use
+		- Chrome OS - developed by Google, optimized for notebooks and requires an active internet connection
 
 ### Shells
 
