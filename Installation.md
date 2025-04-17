@@ -66,7 +66,7 @@
                 - creating a file system in a partition is also called formatting
                 - Windows: NTFS, VFAT, exFAT
                 - Linux: ext4, btrfs, xfs
-            - LVM (Logical Volume Manager) - LVM puts a logical layer between partitions and file systems
+            - **LVM (Logical Volume Manager)** - LVM puts a logical layer between partitions and file systems
                 - you can create, resize, and shrink virtual partitions (logical volumes) in the section managed by LVM at runtime
                 - you can increase the existing LVM storage pool at any time by installing another hard disk or SSD
                 - you can also combine sections of multiple disks into a single, huge storage pool
