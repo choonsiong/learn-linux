@@ -96,7 +96,7 @@
             - Partition sizes
                 - `/` - the system partition, also known as the root partition
                 - `/home` - for your own data if needed
-                - `/boot` - since EFI and GRUB2 boot loader, the boot files can be read directly from the system partition even in complex LVM and RAID setups, a separate boot partition is then actually superfluous
+                - `/boot` - since EFI and GRUB2 bootloader, the boot files can be read directly from the system partition even in complex LVM and RAID setups, a separate boot partition is then actually superfluous
                     - should be around 1 GiB in size if you dediced to have one                
                 - swap - same as Windows swap file
                     - if there isn't enough RAM available on Linux, it stores some of the RAM content that isn't required in that partition
@@ -125,5 +125,5 @@
                   - Red Hat has designated the file system as deprecated in 2017, therefore it is not supported in RHEL  
     - Select installation scope
     - Configuration
-    - Setup boot loader (mostly GRUB) - responsible for starting Linux
-        - For EFI machines, the boot loader is installed in a directory of the ESP
+    - Setup bootloader (mostly GRUB) - responsible for starting Linux
+        - For EFI machines, the bootloader is installed in a directory of the ESP
