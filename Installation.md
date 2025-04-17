@@ -99,6 +99,12 @@
                 - the swap partition doesn't get a name (no mount point)
                 - speed advantage over swap file
                 - 2 GiB of space for the swap partition is sufficient in almost all cases
+                - more and more installations are completely abandoning the swap partition
+            - EFI partition
+                - on EFI systems, there must be at least one ESP
+                - all operating systems share the common EFI partition
+                - must contain a VFAT system, `/boot/efi`
+                - at least 512 MiB in size
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
