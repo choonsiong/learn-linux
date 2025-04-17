@@ -94,6 +94,11 @@
             - `/home` - for your own data if needed
             - `/boot` - since EFI and GRUB2 boot loader, the boot files can be read directly from the system partition even in complex LVM and RAID setups, a separate boot partition is then actually superfluous
                 - should be around 1 GiB in size if you dediced to have one                
+            - swap - same as Windows swap file
+                - if there isn't enough RAM available on Linux, it stores some of the RAM content that isn't required in that partition
+                - the swap partition doesn't get a name (no mount point)
+                - speed advantage over swap file
+                - 2 GiB of space for the swap partition is sufficient in almost all cases
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
