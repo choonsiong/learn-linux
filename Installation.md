@@ -108,7 +108,14 @@
         - File systems
             - Linux supports a lot of different file systems, including `ext4`, `btrfs`, and `xfs`.
             - `ext4`
+              - most popular file system
+            - `xfs`
+              - default file system for RHEL
+              - especially well suited for servers with multiple-TiB-sized file systems
             - `btrfs`
+              - more features than any other Linux file system
+              - many features complicate the administration
+              - Fedora and SUSE use as the default file system for the system partition
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
