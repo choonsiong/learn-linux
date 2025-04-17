@@ -89,6 +89,11 @@
                     - Most encryption systems are based on the fact that the file system is addressed not directly, but via an intermediate layer that is responsible for encryption (similar to how LVM works)
                     - Many installation programs therefore offer encryption functions only in combination with LVM
                         - behind the scenes, not a single file system, but the entire LVM layer is encrypted
+        - Partition sizes
+            - `/` - the system partition, also known as the root partition
+            - `/home` - for your own data if needed
+            - `/boot` - since EFI and GRUB2 boot loader, the boot files can be read directly from the system partition even in complex LVM and RAID setups, a separate boot partition is then actually superfluous
+                - should be around 1 GiB in size if you dediced to have one                
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
