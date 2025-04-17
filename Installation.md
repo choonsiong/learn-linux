@@ -30,98 +30,99 @@
     - Linux alone or in parallel with Windows
     - Multiple distributions on one computer?
 - Overview of the installation process (with Microsoft Windows already installed)
-    - Downsize Windows partition (do it on Windows)
-        - Partitions are sections on the SSD or hard disk
-        - Different operating systems often use different file systems - that is, different methods of storing files within the partition
-        - Methods for managing partitioning information on an SSD or hard disk
-            - **GPT (GUID partition tables)** - used in internal SSDs and hard disks since 2012            
-                - with [GPT](https://en.wikipedia.org/wiki/GUID_Partition_Table), each partition is identified by a *GUID (Globally Unique Identifier)*
-                - all partitions are equal, there is no distinction between primary, extended, and logical partitions
-                - each partition can be up to 8 zettabytes (ZiB) in size (about a billion TiB)
-                - the partition numbers do not have to match the actual order of the partitions
-            - **MBR (Master Boot Record)** - is outdated but still used today, mainly in virtual machines with disks smaller than 2TiB and with external disks
-                - intended for disks up to a maximum of 2 TiB
-                - three types of partitions
-                    - primary
-                    - extended
-                    - logical
-                - a maximum of four primary partitions can exist on the hard disk
-                - it is also possible to define an extended partition instead of one of these four primary partitions
-                    - inside the extended partition, we can create multiple logical partitions
-                    - an extended partition serves only as a container for logical partitions
-                        - only primary and logical partitions are suitable for the actual storage of data
-            - Partition names
-                - Windows - `A:`, `B:`, `C:`, etc
-                - Linux - `/dev/sda1`, `/dev/sda2`, `/dev/sdb1`, `/dev/nvme0n1p1`, etc
-                    - Hard disks and SATA SSDs - `/dev/sda`, `/dev/sdb`
-                    - NVMe interface - `/dev/nvme`
-                    - GPT
-                        - All partitions are simply numbered in sequence
-                    - MBR
-                        - The numbers from 1 to 4 are reserved for primary and extended partitions
-                            - Logical partitions always start with the number 5
-            - File systems
-                - partitioning only reserves space on the SSD or hard disk
-                - you must create a so-called file system before you can store files in a partition
-                - creating a file system in a partition is also called formatting
-                - Windows: NTFS, VFAT, exFAT
-                - Linux: ext4, btrfs, xfs
-            - **LVM (Logical Volume Manager)** - LVM puts a logical layer between partitions and file systems
-                - you can create, resize, and shrink virtual partitions (logical volumes) in the section managed by LVM at runtime
-                - you can increase the existing LVM storage pool at any time by installing another hard disk or SSD
-                - you can also combine sections of multiple disks into a single, huge storage pool
-                - you can create snapshots
-                - in LVM, 3 levels between the hard disk and the file system
-                    - *Physical Volume*
-                        - a physical volume is usually a partition of the hard disk or SSD managed by the LVM
-                        - for the partition to be used as a physical volume, it must be specially marked
-                    - *Volume Group*
-                        - one or more physical volumes can be combined into a group
-                            - it is possible to virtually concatenate partitions of different hard disks
-                        - represents a kind of storage pool that combines all available physical storage media
-                        - can be expanded later with additional physical volumes if necessary                        
-                    - *Logical Volume*
-                        - part of the volume group
-                        - for the user, a logical volume acts like a virtual partition
-                        - the file system is created in the logical volume
-                        - possible to enlarge it provided there is still free space in the storage pool (i.e., the volume group)
-                - LVM vs Encryption
-                    - Most encryption systems are based on the fact that the file system is addressed not directly, but via an intermediate layer that is responsible for encryption (similar to how LVM works)
-                    - Many installation programs therefore offer encryption functions only in combination with LVM
-                        - behind the scenes, not a single file system, but the entire LVM layer is encrypted
-        - Partition sizes
-            - `/` - the system partition, also known as the root partition
-            - `/home` - for your own data if needed
-            - `/boot` - since EFI and GRUB2 boot loader, the boot files can be read directly from the system partition even in complex LVM and RAID setups, a separate boot partition is then actually superfluous
-                - should be around 1 GiB in size if you dediced to have one                
-            - swap - same as Windows swap file
-                - if there isn't enough RAM available on Linux, it stores some of the RAM content that isn't required in that partition
-                - the swap partition doesn't get a name (no mount point)
-                - speed advantage over swap file
-                - 2 GiB of space for the swap partition is sufficient in almost all cases
-                - more and more installations are completely abandoning the swap partition
-                - no real file system is set up in the swap partition
-                  - however the partition must be formatted by `mkswap` before it's used for the first time (normally done automatically by the installation program)
-            - EFI partition
-                - on EFI systems, there must be at least one ESP
-                - all operating systems share the common EFI partition
-                - must contain a VFAT system, `/boot/efi`
-                - at least 512 MiB in size
-        - File systems
-            - Linux supports a lot of different file systems, including `ext4`, `btrfs`, and `xfs`.
-            - `ext4`
-              - most popular file system
-            - `xfs`
-              - default file system for RHEL
-              - especially well suited for servers with multiple-TiB-sized file systems
-            - `btrfs`
-              - more features than any other Linux file system
-              - many features complicate the administration
-              - Fedora and SUSE use as the default file system for the system partition
-              - Red Hat has designated the file system as deprecated in 2017, therefore it is not supported in RHEL
+    - Downsize Windows partition (do it on Windows) 
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
+        - Partitions
+            - Partitions are sections on the SSD or hard disk
+            - Different operating systems often use different file systems - that is, different methods of storing files within the partition
+            - Methods for managing partitioning information on an SSD or hard disk
+                - **GPT (GUID partition tables)** - used in internal SSDs and hard disks since 2012            
+                    - with [GPT](https://en.wikipedia.org/wiki/GUID_Partition_Table), each partition is identified by a *GUID (Globally Unique Identifier)*
+                    - all partitions are equal, there is no distinction between primary, extended, and logical partitions
+                    - each partition can be up to 8 zettabytes (ZiB) in size (about a billion TiB)
+                    - the partition numbers do not have to match the actual order of the partitions
+                - **MBR (Master Boot Record)** - is outdated but still used today, mainly in virtual machines with disks smaller than 2TiB and with external disks
+                    - intended for disks up to a maximum of 2 TiB
+                    - three types of partitions
+                        - primary
+                        - extended
+                        - logical
+                    - a maximum of four primary partitions can exist on the hard disk
+                    - it is also possible to define an extended partition instead of one of these four primary partitions
+                        - inside the extended partition, we can create multiple logical partitions
+                        - an extended partition serves only as a container for logical partitions
+                            - only primary and logical partitions are suitable for the actual storage of data
+                - Partition names
+                    - Windows - `A:`, `B:`, `C:`, etc
+                    - Linux - `/dev/sda1`, `/dev/sda2`, `/dev/sdb1`, `/dev/nvme0n1p1`, etc
+                        - Hard disks and SATA SSDs - `/dev/sda`, `/dev/sdb`
+                        - NVMe interface - `/dev/nvme`
+                        - GPT
+                            - All partitions are simply numbered in sequence
+                        - MBR
+                            - The numbers from 1 to 4 are reserved for primary and extended partitions
+                                - Logical partitions always start with the number 5
+                - File systems
+                    - partitioning only reserves space on the SSD or hard disk
+                    - you must create a so-called file system before you can store files in a partition
+                    - creating a file system in a partition is also called formatting
+                    - Windows: NTFS, VFAT, exFAT
+                    - Linux: ext4, btrfs, xfs
+                - **LVM (Logical Volume Manager)** - LVM puts a logical layer between partitions and file systems
+                    - you can create, resize, and shrink virtual partitions (logical volumes) in the section managed by LVM at runtime
+                    - you can increase the existing LVM storage pool at any time by installing another hard disk or SSD
+                    - you can also combine sections of multiple disks into a single, huge storage pool
+                    - you can create snapshots
+                    - in LVM, 3 levels between the hard disk and the file system
+                        - *Physical Volume*
+                            - a physical volume is usually a partition of the hard disk or SSD managed by the LVM
+                            - for the partition to be used as a physical volume, it must be specially marked
+                        - *Volume Group*
+                            - one or more physical volumes can be combined into a group
+                                - it is possible to virtually concatenate partitions of different hard disks
+                            - represents a kind of storage pool that combines all available physical storage media
+                            - can be expanded later with additional physical volumes if necessary                        
+                        - *Logical Volume*
+                            - part of the volume group
+                            - for the user, a logical volume acts like a virtual partition
+                            - the file system is created in the logical volume
+                            - possible to enlarge it provided there is still free space in the storage pool (i.e., the volume group)
+                    - LVM vs Encryption
+                        - Most encryption systems are based on the fact that the file system is addressed not directly, but via an intermediate layer that is responsible for encryption (similar to how LVM works)
+                        - Many installation programs therefore offer encryption functions only in combination with LVM
+                            - behind the scenes, not a single file system, but the entire LVM layer is encrypted
+            - Partition sizes
+                - `/` - the system partition, also known as the root partition
+                - `/home` - for your own data if needed
+                - `/boot` - since EFI and GRUB2 boot loader, the boot files can be read directly from the system partition even in complex LVM and RAID setups, a separate boot partition is then actually superfluous
+                    - should be around 1 GiB in size if you dediced to have one                
+                - swap - same as Windows swap file
+                    - if there isn't enough RAM available on Linux, it stores some of the RAM content that isn't required in that partition
+                    - the swap partition doesn't get a name (no mount point)
+                    - speed advantage over swap file
+                    - 2 GiB of space for the swap partition is sufficient in almost all cases
+                    - more and more installations are completely abandoning the swap partition
+                    - no real file system is set up in the swap partition
+                      - however the partition must be formatted by `mkswap` before it's used for the first time (normally done automatically by the installation program)
+                - EFI partition
+                    - on EFI systems, there must be at least one ESP
+                    - all operating systems share the common EFI partition
+                    - must contain a VFAT system, `/boot/efi`
+                    - at least 512 MiB in size      
+            - File systems
+                - Linux supports a lot of different file systems, including `ext4`, `btrfs`, and `xfs`.
+                - `ext4`
+                  - most popular file system
+                - `xfs`
+                  - default file system for RHEL
+                  - especially well suited for servers with multiple-TiB-sized file systems
+                - `btrfs`
+                  - more features than any other Linux file system
+                  - many features complicate the administration
+                  - Fedora and SUSE use as the default file system for the system partition
+                  - Red Hat has designated the file system as deprecated in 2017, therefore it is not supported in RHEL  
     - Select installation scope
     - Configuration
     - Setup boot loader (mostly GRUB) - responsible for starting Linux
