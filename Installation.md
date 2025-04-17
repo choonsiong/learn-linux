@@ -50,6 +50,16 @@
                     - inside the extended partition, we can create multiple logical partitions
                     - an extended partition serves only as a container for logical partitions
                         - only primary and logical partitions are suitable for the actual storage of data
+            - Partition names
+                - Windows - `A:`, `B:`, `C:`, etc
+                - Linux - `/dev/sda1`, `/dev/sda2`, `/dev/sdb1`, `/dev/nvme0n1p1`, etc
+                    - Hard disks and SATA SSDs - `/dev/sda`, `/dev/sdb`
+                    - NVMe interface - `/dev/nvme`
+                    - GPT
+                        - All partitions are simply numbered in sequence
+                    - MBR
+                        - The numbers from 1 to 4 are reserved for primary and extended partitions
+                            - Logical partitions always start with the number 5
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
