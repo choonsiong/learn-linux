@@ -60,6 +60,12 @@
                     - MBR
                         - The numbers from 1 to 4 are reserved for primary and extended partitions
                             - Logical partitions always start with the number 5
+            - File systems
+                - partitioning only reserves space on the SSD or hard disk
+                - you must create a so-called file system before you can store files in a partition
+                - creating a file system in a partition is also called formatting
+                - Windows: NTFS, VFAT, exFAT
+                - Linux: ext4, btrfs, xfs
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
