@@ -72,11 +72,17 @@
                 - you can also combine sections of multiple disks into a single, huge storage pool
                 - you can create snapshots
                 - in LVM, 3 levels between the hard disk and the file system
-                    - physical volume
+                    - *Physical Volume*
                         - a physical volume is usually a partition of the hard disk or SSD managed by the LVM
                         - for the partition to be used as a physical volume, it must be specially marked
-                    - volume group
-                    - logical volume
+                    - *Volume Group*
+                        - one or more physical volumes can be combined into a group
+                            - it is possible to virtually concatenate partitions of different hard disks
+                        - represents a kind of storage pool that combines all available physical storage media
+                        - can be expanded later with additional physical volumes if necessary                        
+                    - *Logical Volume*
+                        - part of the volume group
+                        - for the user, a logical volume acts like a virtual partition
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
