@@ -44,6 +44,7 @@
 - [SUSE Linux Enterprise Server](https://www.suse.com/products/server/)
 - [Tiny Core Linux](http://tinycorelinux.net/)
 - [Ubuntu](https://ubuntu.com/)
+  	- [cdimage](https://cdimage.ubuntu.com)
 - [Xubuntu](https://xubuntu.org/)
 
 ## Misc
