@@ -131,3 +131,6 @@
         - For EFI machines, the bootloader is installed in a directory of the ESP
         - The bootloader determines how Linux will be booted in the future
             - The GRUB program is responsible for this in almost all distributions
+    - Update
+        - Normal updates (distribution updates)
+        - Rolling releases
