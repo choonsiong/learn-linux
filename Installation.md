@@ -100,6 +100,8 @@
                 - speed advantage over swap file
                 - 2 GiB of space for the swap partition is sufficient in almost all cases
                 - more and more installations are completely abandoning the swap partition
+                - no real file system is set up in the swap partition
+                  - however the partition must be formatted by `mkswap` before it's used for the first time (normally done automatically by the installation program)
             - EFI partition
                 - on EFI systems, there must be at least one ESP
                 - all operating systems share the common EFI partition
@@ -116,6 +118,7 @@
               - more features than any other Linux file system
               - many features complicate the administration
               - Fedora and SUSE use as the default file system for the system partition
+              - Red Hat has designated the file system as deprecated in 2017, therefore it is not supported in RHEL
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
