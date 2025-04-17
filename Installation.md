@@ -83,6 +83,8 @@
                     - *Logical Volume*
                         - part of the volume group
                         - for the user, a logical volume acts like a virtual partition
+                        - the file system is created in the logical volume
+                        - possible to enlarge it provided there is still free space in the storage pool (i.e., the volume group)
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
