@@ -44,6 +44,8 @@
                 - a maximum of four primary partitions can exist on the hard disk
                 - it is also possible to define an extended partition instead of one of these four primary partitions
                     - inside the extended partition, we can create multiple logical partitions
+                    - an extended partition serves only as a container for logical partitions
+                        - only primary and logical partitions are suitable for the actual storage of data
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
