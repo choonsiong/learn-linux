@@ -71,6 +71,12 @@
                 - you can increase the existing LVM storage pool at any time by installing another hard disk or SSD
                 - you can also combine sections of multiple disks into a single, huge storage pool
                 - you can create snapshots
+                - in LVM, 3 levels between the hard disk and the file system
+                    - physical volume
+                        - a physical volume is usually a partition of the hard disk or SSD managed by the LVM
+                        - for the partition to be used as a physical volume, it must be specially marked
+                    - volume group
+                    - logical volume
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
