@@ -34,8 +34,8 @@
         - Partitions are sections on the SSD or hard disk
         - Different operating systems often use different file systems - that is, different methods of storing files within the partition
         - Methods for managing partitioning information on an SSD or hard disk
-            - GPT (GUID partition tables) - used in internal SSDs and hard disks since 2012
-            - MBR (Master Boot Record) - is outdated but still used today, mainly in virtual machines with disks smaller than 2TiB and with external disks
+            - **GPT (GUID partition tables)** - used in internal SSDs and hard disks since 2012
+            - **MBR (Master Boot Record)** - is outdated but still used today, mainly in virtual machines with disks smaller than 2TiB and with external disks
                 - intended for disks up to a maximum of 2 TiB
                 - three types of partitions
                     - primary
