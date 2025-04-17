@@ -34,8 +34,10 @@
         - Partitions are sections on the SSD or hard disk
         - Different operating systems often use different file systems - that is, different methods of storing files within the partition
         - Methods for managing partitioning information on an SSD or hard disk
-            - **GPT (GUID partition tables)** - used in internal SSDs and hard disks since 2012
-                - With GPT, each partition is identified by a *GUID (Globally Unique Identifier)*
+            - **GPT (GUID partition tables)** - used in internal SSDs and hard disks since 2012            
+                - with GPT, each partition is identified by a *GUID (Globally Unique Identifier)*
+                - all partitions are equal, there is no distinction between primary, extended, and logical partitions
+                - each partition can be up to 8 zettabytes (ZiB) in size (about a billion TiB)
             - **MBR (Master Boot Record)** - is outdated but still used today, mainly in virtual machines with disks smaller than 2TiB and with external disks
                 - intended for disks up to a maximum of 2 TiB
                 - three types of partitions
