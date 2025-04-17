@@ -35,7 +35,7 @@
         - Different operating systems often use different file systems - that is, different methods of storing files within the partition
         - Methods for managing partitioning information on an SSD or hard disk
             - **GPT (GUID partition tables)** - used in internal SSDs and hard disks since 2012            
-                - with GPT, each partition is identified by a *GUID (Globally Unique Identifier)*
+                - with [GPT](https://en.wikipedia.org/wiki/GUID_Partition_Table), each partition is identified by a *GUID (Globally Unique Identifier)*
                 - all partitions are equal, there is no distinction between primary, extended, and logical partitions
                 - each partition can be up to 8 zettabytes (ZiB) in size (about a billion TiB)
                 - the partition numbers do not have to match the actual order of the partitions
