@@ -124,6 +124,8 @@
                   - Fedora and SUSE use as the default file system for the system partition
                   - Red Hat has designated the file system as deprecated in 2017, therefore it is not supported in RHEL  
     - Select installation scope
+      - Desktop systems such as GNOME, KDE, Cinnamon, MATE or Xfce
     - Configuration
+      - In Ubuntu and some other distributions, the `root` user account is completely disabled
     - Setup bootloader (mostly GRUB) - responsible for starting Linux
         - For EFI machines, the bootloader is installed in a directory of the ESP
