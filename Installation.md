@@ -105,6 +105,10 @@
                 - all operating systems share the common EFI partition
                 - must contain a VFAT system, `/boot/efi`
                 - at least 512 MiB in size
+        - File systems
+            - Linux supports a lot of different file systems, including `ext4`, `btrfs`, and `xfs`.
+            - `ext4`
+            - `btrfs`
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
