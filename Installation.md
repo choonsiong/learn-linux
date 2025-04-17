@@ -85,6 +85,10 @@
                         - for the user, a logical volume acts like a virtual partition
                         - the file system is created in the logical volume
                         - possible to enlarge it provided there is still free space in the storage pool (i.e., the volume group)
+                - LVM vs Encryption
+                    - Most encryption systems are based on the fact that the file system is addressed not directly, but via an intermediate layer that is responsible for encryption (similar to how LVM works)
+                    - Many installation programs therefore offer encryption functions only in combination with LVM
+                        - behind the scenes, not a single file system, but the entire LVM layer is encrypted
     - Prepare USB flash drive (copy the ISO image)
     - Start Linux installation
     - Create Linux partitions
