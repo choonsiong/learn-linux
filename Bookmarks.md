@@ -23,6 +23,7 @@
     - [Silverblue](https://fedoraproject.org/atomic-desktops/silverblue/)
     - [ALT Downloads](https://alt.fedoraproject.org)
 	- [RPM Fusion](https://rpmfusion.org)
+    - [Fedora 41/40/39 NVIDIA Drivers Install Guide](https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/)
 - [Kali Linux](https://www.kali.org/)
 - [KDE neon](https://neon.kde.org/)
 - [Kubuntu](https://kubuntu.org/)
