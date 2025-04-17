@@ -37,6 +37,7 @@
 - [Parted Magic](https://partedmagic.com)
 - [Pop!_OS](https://system76.com/)
 - [Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
+  	- [RHEL 9 Documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9)
 - [Rocky Linux](https://rockylinux.org/)
 - [Slackware](http://www.slackware.com/)
 - [Slax](https://www.slax.org/)
