@@ -129,3 +129,5 @@
       - In Ubuntu and some other distributions, the `root` user account is completely disabled
     - Setup bootloader (mostly GRUB) - responsible for starting Linux
         - For EFI machines, the bootloader is installed in a directory of the ESP
+        - The bootloader determines how Linux will be booted in the future
+            - The GRUB program is responsible for this in almost all distributions
