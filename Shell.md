@@ -23,6 +23,16 @@ $ sudo -s
 foobar is not in the sudoers file.
 $ 
 ```
+    - If the user is not in sudo list
+        - Run `su -l`
+```
+$ su -l
+Password: 
+... loading /etc/profile
+... loading /etc/bash.bashrc
+root@debian12:~# 
+root@debian12:~# 
+```        
 - Use `\` to split commands into different lines
 ```
 $ gconftool-2 \
