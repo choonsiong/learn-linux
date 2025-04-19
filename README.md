@@ -6,3 +6,5 @@
 - [Shell](https://github.com/choonsiong/learn-linux/blob/main/Shell.md)
     - [`bash`](https://github.com/choonsiong/learn-linux/blob/main/bash.md)
 - [Bookmarks](https://github.com/choonsiong/learn-linux/blob/main/Bookmarks.md)
+
+![img](tmp/linux.svg)
