@@ -13,5 +13,7 @@
 - `set -e` to abort the script at the first error
     ```
     #!/bin/bash -e
+    # this script will abort at the first error
+    ...
     ...
     ```
