@@ -164,13 +164,13 @@
     - `find / -name '*sh' > result &`
     > If you forget the `&` character when starting a command, you can interrupt the program using `Ctrl+Z` and continue it as a background process via `bg`
 - Single and double quotation marks
-    ```
-    foobar@debian12:~$ NAME='foo bar'
-    foobar@debian12:~$ echo $NAME
-    foo bar
-    foobar@debian12:~$ echo 'Hello $NAME'
-    Hello $NAME
-    foobar@debian12:~$ echo "Hello $NAME"
-    Hello foo bar
-    foobar@debian12:~$
-    ```    
+```
+foobar@debian12:~$ NAME='foo bar'
+foobar@debian12:~$ echo $NAME
+foo bar
+foobar@debian12:~$ echo 'Hello $NAME'
+Hello $NAME
+foobar@debian12:~$ echo "Hello $NAME"
+Hello foo bar
+foobar@debian12:~$
+```
