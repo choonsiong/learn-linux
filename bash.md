@@ -84,4 +84,13 @@
 
         For more details see more(1).
         foobar@debian12:/tmp$ 
-        ```    
+        ```
+    - use `unalias` to delete an alias
+    - to see all aliases `alias`
+        ```
+        foobar@debian12:/tmp$ alias
+        alias cdtmp='cd /tmp'
+        alias ls='ls --color=auto'
+        alias more='less'
+        foobar@debian12:/tmp$ 
+        ```
