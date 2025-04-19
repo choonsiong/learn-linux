@@ -41,33 +41,6 @@
     - **script** - `bash` is used as an interpreter to execute program code. No configuration files are loaded in the process. However, when the script is started interactively in a terminal window, the already existing settings still apply.
     - **login shell** - a *login shell* exists when you log in to a text console or when you work via SSH on an external computer. This means that the shell is started immediately after authentication and then (interactively) accepts and process your commands.
     - **interactive shell** - an *interactive shell* if the login has already happened earlier and the shell is started later (if required). This is always true if you first log into a desktop system and then open a terminal window. Then again a shell is started, which waits for your commands.    
-- Running commands in the background
-    - `firefox &`
-- Input and output redirection
-    - Three standard files (file descriptors)
-        - standard input `<`
-            - `cat < file`
-        - standard output `>`
-            - `ls -l > output.txt`
-            - `ls -l >> output.txt` (append)
-        - standard error `2>`
-            - `ls -l > output.txt 2> error.txt`
-        > It is not possible to edit a file and write the result back to this file at the same time! `sort file > file` or `sort < file > file` causes `file` to be deleted! Use `sponge` from `moreutils` instead.
-        ```
-        root@debian12:~# sponge -help
-        sponge [-a] <file>: soak up all input from stdin and write it to <file>
-        root@debian12:~# sponge /tmp/output.txt
-        abc
-        def
-        ghi
-        jkl
-        root@debian12:~# cat /tmp/output.txt 
-        abc
-        def
-        ghi
-        jkl
-        root@debian12:~#
-        ```
 - Search for commands
     - `whereis name` - searches all default directories
     - `which name` - searches all directories contained in `PATH`
@@ -132,7 +105,36 @@
         - `man -a command`
     - `help command` - only works with shell commands, such as `cd` or `alias`
     - `info command` - an alternative to `man`
-
+- Running commands in the background
+    - `firefox &`
+- Input and output redirection
+    - Three standard files (file descriptors)
+        - standard input `<`
+            - `cat < file`
+        - standard output `>`
+            - `ls -l > output.txt`
+            - `ls -l >> output.txt` (append)
+        - standard error `2>`
+            - `ls -l > output.txt 2> error.txt`
+        > It is not possible to edit a file and write the result back to this file at the same time! `sort file > file` or `sort < file > file` causes `file` to be deleted! Use `sponge` from `moreutils` instead.
+        ```
+        root@debian12:~# sponge -help
+        sponge [-a] <file>: soak up all input from stdin and write it to <file>
+        root@debian12:~# sponge /tmp/output.txt
+        abc
+        def
+        ghi
+        jkl
+        root@debian12:~# cat /tmp/output.txt 
+        abc
+        def
+        ghi
+        jkl
+        root@debian12:~#
+        ```
+- Pipes `|` - the output of the first command is used as input for the second command
+    - `ls -l | less`
+    
 ## Commands
 
 - `cat`
