@@ -136,7 +136,8 @@
             ```
         - `a{1..4}` - returns a1 a2 a3 a4
         - `$varname` - returns the content of the variable
-        - `$((3*4))` - arithmetic calculations; returns 12
+        - `$((3*4))` (arithmetic expansion) - arithmetic calculations; returns 12
+            - `+ - * / % == != < <= > >= << >> !&& ||`
         - `$(command)` or \`command\` - replaces the command with its result
         - `command "character"`
         - `command 'character'`    
