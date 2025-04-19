@@ -172,4 +172,13 @@
 - Use `set -x` to see how `bash` works internally, `bash` then displays the way the command line is parsed before executing any further command
 - Variables
     - `bash` variables can only store strings
-    - `var='abc'` `echo $var`
+        ```
+        foobar@debian12:~$ var='abc'
+        foobar@debian12:~$ echo $var
+        abc
+        foobar@debian12:~$ echo "${var}"
+        abc
+        foobar@debian12:~$ echo "abc${var}"
+        abcabc
+        foobar@debian12:~$ 
+        ```
