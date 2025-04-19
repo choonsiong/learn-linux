@@ -7,32 +7,32 @@
 - Running commands in the background
     - `firefox &`
 - Becoming `root` user
-    - If the user has root priviledge (`/etc/sudoers`)
+    - If the user in sudo list (`/etc/sudoers`)
         - Run `sudo -s`
-```
-tecnomen@debian12:~$ sudo -s
-[sudo] password for tecnomen: 
-... loading /etc/bash.bashrc
-root@debian12:/home/tecnomen# 
-root@debian12:/etc# grep -i tecnomen /etc/sudoers
-tecnomen	ALL=(ALL:ALL) ALL
-root@debian12:/etc# 
+            ```
+            tecnomen@debian12:~$ sudo -s
+            [sudo] password for tecnomen: 
+            ... loading /etc/bash.bashrc
+            root@debian12:/home/tecnomen# 
+            root@debian12:/etc# grep -i tecnomen /etc/sudoers
+            tecnomen	ALL=(ALL:ALL) ALL
+            root@debian12:/etc# 
 
-$ sudo -s
-[sudo] password for foobar: 
-foobar is not in the sudoers file.
-$ 
-```
+            $ sudo -s
+            [sudo] password for foobar: 
+            foobar is not in the sudoers file.
+            $ 
+            ```
     - If the user is not in sudo list
         - Run `su -l`
-```
-$ su -l
-Password: 
-... loading /etc/profile
-... loading /etc/bash.bashrc
-root@debian12:~# 
-root@debian12:~# 
-```        
+            ```
+            $ su -l
+            Password: 
+            ... loading /etc/profile
+            ... loading /etc/bash.bashrc
+            root@debian12:~# 
+            root@debian12:~# 
+            ```        
 - Use `\` to split commands into different lines
 ```
 $ gconftool-2 \
