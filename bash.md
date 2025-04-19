@@ -170,3 +170,6 @@
         - `command "character"`
         - `command 'character'`    
 - Use `set -x` to see how `bash` works internally, `bash` then displays the way the command line is parsed before executing any further command
+- Variables
+    - `bash` variables can only store strings
+    - `var='abc'` `echo $var`
