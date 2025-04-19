@@ -112,6 +112,8 @@
         - standard output `>`
             - `ls -l > output.txt`
             - `ls -l >> output.txt` (append)
+            - `(ls; date) > output.txt` (both commands are executed by a single shell)
+                - the parentheses cause the two commands to be executed within a new shell (a subshell) and therefore also provide a common result
         - standard error `2>`
             - `ls -l > output.txt 2> error.txt`
         > It is not possible to edit a file and write the result back to this file at the same time! `sort file > file` or `sort < file > file` causes `file` to be deleted! Use `sponge` from `moreutils` instead.
