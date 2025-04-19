@@ -1,6 +1,5 @@
 # `bash` Shell
 
-- Different ways of using the `bash` shell
 - `bash` configuration files
     - global
         - `/etc/profile` - used to set environment variables
