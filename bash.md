@@ -138,6 +138,13 @@
         - `$varname` - returns the content of the variable
         - `$((3*4))` (arithmetic expansion) - arithmetic calculations; returns 12
             - `+ - * / % == != < <= > >= << >> !&& ||` - all calculations are performed for 32-bit integers
+                ```
+                foobar@debian12:~$ x=1
+                foobar@debian12:~$ y=2
+                foobar@debian12:~$ echo $(($x+$y))
+                3
+                foobar@debian12:~$ 
+                ```            
         - `$(command)` or \`command\` - replaces the command with its result
         - `command "character"`
         - `command 'character'`    
