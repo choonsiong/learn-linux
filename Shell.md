@@ -42,7 +42,7 @@
 - Looking for help for commands?
     - `command --help`
     - `man command`
-        - `man range command` - `man 3 printf`
+        - `man range command` - e.g., `man 3 printf`
             - 1 - user commands
             - 2 - system calls
             - 3 - c functions
