@@ -125,4 +125,5 @@
         foobar@debian12:~$ echo /[a-f]*
         /bin /boot /dev /etc
         foobar@debian12:~$ 
-        ```        
+        ```
+- Use `set -x` to see how `bash` works internally, `bash` then displays the way the command line is parsed before executing any further command
