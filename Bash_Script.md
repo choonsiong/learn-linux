@@ -10,3 +10,8 @@
         - `0` - no error
         - `1` - general error
         - `2` - error in the passed parameters
+- `set -e` to abort the script at the first error
+    ```
+    #!/bin/bash -e
+    ...
+    ```
