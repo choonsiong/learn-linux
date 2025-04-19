@@ -43,6 +43,14 @@
     - **interactive shell** - an *interactive shell* if the login has already happened earlier and the shell is started later (if required). This is always true if you first log into a desktop system and then open a terminal window. Then again a shell is started, which waits for your commands.    
 - Running commands in the background
     - `firefox &`
+- Input and output redirection
+    - Three standard files (file descriptors)
+        - standard input `<`
+        - standard output `>`
+            - `ls -l > output.txt`
+            - `ls -l >> output.txt` (append)
+        - standard error `2>`
+            - `ls -l > output.txt 2> error.txt`
 - Search for commands
     - `whereis name` - searches all default directories
     - `which name` - searches all directories contained in `PATH`
