@@ -148,7 +148,7 @@
             tecnomen@debian12:/tmp$ less < myfifo
             [1]+  Done                    ls --color=auto -l > myfifo
             ```
-
+        - Only commands that read the commands to be processed from the default input channel are suitable for formulating a pipe
 ## Commands
 
 - `cat`
