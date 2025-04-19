@@ -17,6 +17,11 @@ root@debian12:/home/tecnomen#
 root@debian12:/etc# grep -i tecnomen /etc/sudoers
 tecnomen	ALL=(ALL:ALL) ALL
 root@debian12:/etc# 
+
+$ sudo -s
+[sudo] password for foobar: 
+foobar is not in the sudoers file.
+$ 
 ```
 - Use `\` to split commands into different lines
 ```
