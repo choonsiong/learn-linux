@@ -134,7 +134,8 @@
         ```
 - Pipes `|` - the output of the first command is used as input for the second command
     - `ls -l | less`
-    
+- Using FIFO files - FIFO stands for first in, first out and implements the idea of a pipe as a file
+
 ## Commands
 
 - `cat`
