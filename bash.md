@@ -101,6 +101,16 @@
         - `*` - any number (also zero) or arbitrary characters (but no .* files!)
             - by default, `*` does not take files or directories into account that start with a dot (hidden files or directories)
                 - use `shopt -s dotglob` to enable capture of hidden files or directories (`shopt -u dotglob` to disable)
+            - use `echo` to test the function of special characters
+                ```
+                foobar@debian12:~$ echo /*
+                /bin /boot /dev /etc /home /lib /lost+found /media /mnt /opt /proc /root /run /sbin /srv /sys /tmp /usr /var
+                foobar@debian12:~$ 
+
+                foobar@debian12:~$ echo /[a-f]*
+                /bin /boot /dev /etc
+                foobar@debian12:~$ 
+                ```            
         - `**` - all files and directories, also from all subdirectories (from bash 4.0 with `shopt -s globstar`)
             - `ls **/*.pdf` - show all PDF files in the current directory and all subdirectories
         - `[abc]` - one of the specified characters
@@ -129,15 +139,5 @@
         - `$((3*4))` - arithmetic calculations; returns 12
         - `$(command)` or \`command\` - replaces the command with its result
         - `command "character"`
-        - `command 'character'`
-    - use `echo` to test the function of special characters
-        ```
-        foobar@debian12:~$ echo /*
-        /bin /boot /dev /etc /home /lib /lost+found /media /mnt /opt /proc /root /run /sbin /srv /sys /tmp /usr /var
-        foobar@debian12:~$ 
-
-        foobar@debian12:~$ echo /[a-f]*
-        /bin /boot /dev /etc
-        foobar@debian12:~$ 
-        ```
+        - `command 'character'`    
 - Use `set -x` to see how `bash` works internally, `bash` then displays the way the command line is parsed before executing any further command
