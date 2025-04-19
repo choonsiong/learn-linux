@@ -105,8 +105,6 @@
         - `man -a command`
     - `help command` - only works with shell commands, such as `cd` or `alias`
     - `info command` - an alternative to `man`
-- Running commands in the background
-    - `firefox &`
 - Input and output redirection
     - Three standard files (file descriptors)
         - standard input `<`
@@ -157,7 +155,10 @@
     - `cmd1 & cmd2` - starts command 1 in the background, command 2 in the foreground
     - `(cmd1 ; cmd2)` - executes both commands in the same shell
 - Scripts or programs stored in the currently active directory cannot be executed easily for security reasons. Rather, you must prefix the script name with `./`, such as `./myscript`, where `.` is an abbreviation for the current directory.
-
+- Running commands in the background
+    - `firefox &`
+    - `find / -name '*sh' > result &`
+    > If you forget the `&` character when starting a command, you can interrupt the program using `Ctrl+Z` and continue it as a background process via `bg`
 ## Commands
 
 - `cat`
