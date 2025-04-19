@@ -165,7 +165,11 @@
             -rw-r--r-- 1 root root    91 Feb  9  2022 /usr/share/X11/xkb/rules/README
             -rw-r--r-- 1 root root   246 Feb  9  2022 /usr/share/X11/xkb/types/README
             xargs: ls: terminated by signal 13
-            foobar@debian12:~$             
+            foobar@debian12:~$
+            foobar@debian12:~$ a=$(pwd)
+            foobar@debian12:~$ echo $a
+            /home/foobar
+            foobar@debian12:~$                          
             ```
         - `command "character"`
         - `command 'character'`    
