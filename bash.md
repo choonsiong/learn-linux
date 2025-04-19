@@ -12,9 +12,11 @@
         - `.inputrc`
         - `.bash_login`
         - `.bash_logout`
-- The `bash` shell prompt - the content of the prompt is defined by the `PS1` environment variable, e.g., `PS1="\w \$ "`
+- The `bash` shell prompt - the content of the prompt is defined by the `PS1` environment variable, e.g., `PS1="\w \$ "`    
     - `\u` - user name
     - `\h` - host name
+    - `\t` - current time
+    - `\d` - current date
     - `\w` - entire current directory
     - `\W` - last part of the current directory
     - `\$` - prompt ending (`$` or `#`)
@@ -195,4 +197,41 @@
         ```
 - Environment variables
     - `export varname`
-    - `declare -x varname`        
+    - `declare -x varname`
+    - predefined environment variables
+        - `BASH`
+        - `HOME`
+        - `LOGNAME`
+        - `HOSTNAME`
+        - `OLDPWD`
+        - `PATH`
+        - `PROMPT_COMMAND` - can contain a command that is executed each time before `bash` displays the command prompt
+        - `PS1`
+        - `PS2`
+        - `PWD`
+        - `RANDOM`        
+        ```
+        foobar@debian12:~$ echo $BASH
+        /usr/bin/bash    
+        foobar@debian12:~$ echo $HOME
+        /home/foobar
+        foobar@debian12:~$ echo $LOGNAME
+        foobar
+        foobar@debian12:~$ echo $HOSTNAME
+        debian12
+        foobar@debian12:~$ echo $OLDPWD
+
+        foobar@debian12:~$ echo $PATH
+        /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+        foobar@debian12:~$ echo $PROMPT_COMMAND
+
+        foobar@debian12:~$ echo $PS1
+        \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$
+        foobar@debian12:~$ echo $PS2
+        >
+        foobar@debian12:~$ echo $PWD
+        /home/foobar
+        foobar@debian12:~$ echo $RANDOM
+        5717
+        foobar@debian12:~$
+        ```        
