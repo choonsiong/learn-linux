@@ -109,3 +109,8 @@
         - `~` - abbreviation for home directory
         - `.` - current directory
         - `..` - parent directory
+        - `ab{1,2,3}`
+        - `a{1..4}`
+        - `$varname`
+        - `$((3*4))`
+        - ``command``
