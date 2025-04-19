@@ -144,6 +144,13 @@
                 foobar@debian12:~$ echo $(($x+$y))
                 3
                 foobar@debian12:~$ 
+
+                foobar@debian12:~$ x=3
+                foobar@debian12:~$ y=3
+                foobar@debian12:~$ z=$((x+y))
+                foobar@debian12:~$ echo $z
+                6
+                foobar@debian12:~$
                 ```
             - or use `$[expression]` or `expr` command            
         - `$(command)` or \`command\` (command substitution) - replaces the command with its result
