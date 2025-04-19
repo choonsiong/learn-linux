@@ -96,7 +96,7 @@
         ```
 - Shell globbing and substitution/expansion
     - `bash` replaced the search pattern with actual matching file names
-    - characters for globbing
+    - special characters for globbing and substitution in bash
         - `?` - exactly one character
         - `*` - any number (also zero) or arbitrary characters (but no .* files!)
         - `**` - all files and directories, also from all subdirectories (from bash 4.0 with `shopt -s globstar`)
@@ -104,7 +104,6 @@
         - `[a-f]` - a character from the specified range
         - `[!abc]` - none of the specified characters
         - `[^abc]` - none of the specified characters
-    - characters for substitution
         - `~` - abbreviation for home directory
         - `.` - current directory
         - `..` - parent directory
