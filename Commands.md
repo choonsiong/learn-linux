@@ -1,7 +1,7 @@
 # Commands
 
 - `cat`
-- `export`
+- `export` - lists environment variables
     ```
     foobar@debian12:~$ export
     declare -x DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1001/bus"
@@ -40,7 +40,7 @@
 - `ls`
     - `ls -l`
 - `mkfifo`
-- `printenv`
+- `printenv` - lists only environment variables
     ```
     foobar@debian12:~$ printenv
     SHELL=/usr/bin/bash
