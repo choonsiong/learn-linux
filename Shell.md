@@ -52,7 +52,22 @@
             - `ls -l >> output.txt` (append)
         - standard error `2>`
             - `ls -l > output.txt 2> error.txt`
-        > It is not possible to edit a file and write the result back to this file at the same time! `sort file > file` or `sort < file > file` causes `file` to be deleted!
+        > It is not possible to edit a file and write the result back to this file at the same time! `sort file > file` or `sort < file > file` causes `file` to be deleted! Use `sponge` from `moreutils` instead.
+            ```
+            root@debian12:~# sponge -help
+            sponge [-a] <file>: soak up all input from stdin and write it to <file>
+            root@debian12:~# sponge /tmp/output.txt
+            abc
+            def
+            ghi
+            jkl
+            root@debian12:~# cat /tmp/output.txt 
+            abc
+            def
+            ghi
+            jkl
+            root@debian12:~#
+            ```
 - Search for commands
     - `whereis name` - searches all default directories
     - `which name` - searches all directories contained in `PATH`
