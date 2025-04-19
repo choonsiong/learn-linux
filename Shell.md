@@ -25,6 +25,18 @@
     There is NO WARRANTY, to the extent permitted by law.
     foobar@debian12:/etc$ 
     ``` 
+- Changing running shell
+    ```
+    foobar@debian12:/etc$ 
+    foobar@debian12:/etc$ grep foobar /etc/passwd
+    foobar:x:1001:1001::/home/foobar:/bin/sh
+    foobar@debian12:/etc$ chsh -s $(which bash) foobar
+    Password: 
+    foobar@debian12:/etc$ 
+    foobar@debian12:/etc$ grep foobar /etc/passwd
+    foobar:x:1001:1001::/home/foobar:/usr/bin/bash
+    foobar@debian12:/etc$ 
+    ```
 - Running commands in the background
     - `firefox &`
 - Becoming `root` user
