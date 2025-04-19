@@ -1,5 +1,3 @@
-# 目录
-
 ![img](tmp/linux2.svg)
 
 - [About Linux](https://github.com/choonsiong/learn-linux/blob/main/Linux.md)
