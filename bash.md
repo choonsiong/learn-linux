@@ -18,3 +18,12 @@
     - `\w` - entire current directory
     - `\W` - last part of the current directory
     - `\$` - prompt ending (`$` or `#`)
+- `bash` aliases - to define abbreviations
+    - `alias cdtmp='cd /tmp'
+        ```
+        foobar@debian12:~$ alias cdtmp='cd /tmp'
+        foobar@debian12:~$ cdtmp
+        foobar@debian12:/tmp$ pwd
+        /tmp
+        foobar@debian12:/tmp$ 
+        ```
