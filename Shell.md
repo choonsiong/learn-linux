@@ -135,6 +135,19 @@
 - Pipes `|` - the output of the first command is used as input for the second command
     - `ls -l | less`
 - Using FIFO files - FIFO stands for first in, first out and implements the idea of a pipe as a file
+    - In practice, they are used so that two independent programs can communicate with each other
+        - The following three commands first set up a FIFO file, then `ls` is started as a background process, which writes its outputs to the file.
+            ```
+            tecnomen@debian12:/tmp$ mkfifo myfifo
+            tecnomen@debian12:/tmp$ ls -l myfifo
+            prw-r--r-- 1 tecnomen tecnomen 0 Apr 19 21:05 myfifo
+            tecnomen@debian12:/tmp$ 
+            tecnomen@debian12:/tmp$ ls -l > myfifo &
+            [1] 163138
+            tecnomen@debian12:/tmp$ 
+            tecnomen@debian12:/tmp$ less < myfifo
+            [1]+  Done                    ls --color=auto -l > myfifo
+            ```
 
 ## Commands
 
