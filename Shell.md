@@ -39,6 +39,23 @@
     --set "/abc/def" \
     --type integer "0"
     ```
+- Looking for help for commands?
+    - `command --help`
+    - `man command`
+        - `man range command` - `man 3 printf`
+            - 1 - user commands
+            - 2 - system calls
+            - 3 - c functions
+            - 4 - file formats, device files
+            - 5 - configuration files
+            - 6 - games
+            - 7 - miscellaneous
+            - 8 - system administration commands
+            - 9 - kernel functions
+            - n - new commands
+        - `man -a command`
+    - `help command` - only works with shell commands, such as `cd` or `alias`
+    - `info command` - an alternative to `man`
 
 ## Commands
 
