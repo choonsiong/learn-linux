@@ -43,6 +43,20 @@
     - **interactive shell** - an *interactive shell* if the login has already happened earlier and the shell is started later (if required). This is always true if you first log into a desktop system and then open a terminal window. Then again a shell is started, which waits for your commands.    
 - Running commands in the background
     - `firefox &`
+- Search for commands
+    - `whereis name` - searches all default directories
+    - `which name` - searches all directories contained in `PATH`
+    - `type name` - similar to `which`, but also takes into account commands that are built into `bash` or defined as aliases
+    ```
+    foobar@debian12:/etc$ type find
+    find is /usr/bin/find
+    foobar@debian12:/etc$ whereis find
+    find: /usr/bin/find /usr/share/man/man1/find.1.gz /usr/share/info/find.info-2.gz /usr/share/info/find.info.gz /usr/share/info/find.info-1.gz
+    foobar@debian12:/etc$ 
+    foobar@debian12:/etc$ which find
+    /usr/bin/find
+    foobar@debian12:/etc$ 
+    ```
 - Becoming `root` user
     - If the user in sudo list (`/etc/sudoers`)
         - Run `sudo -s`
