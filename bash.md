@@ -144,7 +144,8 @@
                 foobar@debian12:~$ echo $(($x+$y))
                 3
                 foobar@debian12:~$ 
-                ```            
+                ```
+            - or use `$[expression]` or `expr` command            
         - `$(command)` or \`command\` - replaces the command with its result
         - `command "character"`
         - `command 'character'`    
