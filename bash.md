@@ -13,3 +13,9 @@
         - `.inputrc`
         - `.bash_login`
         - `.bash_logout`
+- The `bash` shell prompt - the content of the prompt is defined by the `PS1` environment variable, e.g., `PS1="\w \$ "`
+    - `\u` - user name
+    - `\h` - host name
+    - `\w` - entire current directory
+    - `\W` - last part of the current directory
+    - `\$` - prompt ending (`$` or `#`)
