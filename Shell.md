@@ -156,6 +156,7 @@
     - `cmd &` - starts the command in the background
     - `cmd1 & cmd2` - starts command 1 in the background, command 2 in the foreground
     - `(cmd1 ; cmd2)` - executes both commands in the same shell
+- Scripts or programs stored in the currently active directory cannot be executed easily for security reasons. Rather, you must prefix the script name with `./`, such as `./myscript`, where `.` is an abbreviation for the current directory.
 
 ## Commands
 
