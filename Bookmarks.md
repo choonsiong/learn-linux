@@ -50,7 +50,7 @@
 ## Shell
 
 - [Bash Prompt HOWTO](https://tldp.org/HOWTO/Bash-Prompt-HOWTO/)
-- [Bash Scripting Tutorial: How to write a bash script](https://linuxconfig.org/bash-scripting-tutorial)
+- [Bash Scripting Tutorial: How to write a Bash Script](https://linuxconfig.org/bash-scripting-tutorial)
 - [Colorizing Terminal and Shell in Linux](https://www.baeldung.com/linux/terminal-shell-colors)
 - [GNU Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
 - [The Z Shell Manual](https://zsh.sourceforge.io/Doc/Release/index.html)
