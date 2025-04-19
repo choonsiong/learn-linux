@@ -114,3 +114,13 @@
         - `$(command)` or \`command\` - replaces the command with its result
         - `command "character"`
         - `command 'character'`
+    - use `echo` to test the function of special characters
+        ```
+        foobar@debian12:~$ echo /*
+        /bin /boot /dev /etc /home /lib /lost+found /media /mnt /opt /proc /root /run /sbin /srv /sys /tmp /usr /var
+        foobar@debian12:~$ 
+
+        foobar@debian12:~$ echo /[a-f]*
+        /bin /boot /dev /etc
+        foobar@debian12:~$ 
+        ```        
