@@ -110,7 +110,20 @@
         - `~` - abbreviation for home directory
         - `.` - current directory
         - `..` - parent directory
-        - `ab{1,2,3}` - returns ab1 ab2 ab3
+        - `ab{1,2,3}` (brace expansion) - returns ab1 ab2 ab3
+            ```
+            foobar@debian12:~$ echo {a,b}{1,2,3}
+            a1 a2 a3 b1 b2 b3
+            foobar@debian12:~$ 
+
+            foobar@debian12:~$ echo {z..r}
+            z y x w v u t s r
+            foobar@debian12:~$ 
+
+            foobar@debian12:~$ echo {1..5}
+            1 2 3 4 5
+            foobar@debian12:~$ 
+            ```
         - `a{1..4}` - returns a1 a2 a3 a4
         - `$varname` - returns the content of the variable
         - `$((3*4))` - arithmetic calculations; returns 12
