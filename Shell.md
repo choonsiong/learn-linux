@@ -6,6 +6,25 @@
 - On the other hand, we speak of an *interactive shell* if the login has already happened earlier and the shell is started later - if required. This is always true if you first log into a desktop system and then open a terminal window. There again a shell is started, which waits for your commands.
 - Shell vs Terminal
     - On Linux, the terminal program is only responsible for the external user interface, the actual work is done by the shell that is executed inside the terminal.
+- Check running shell
+    ```
+    $ 
+    $ echo $0
+    -sh
+    $ bash
+    ... loading /etc/bash.bashrc
+    foobar@debian12:/etc$ echo $0
+    bash
+    foobar@debian12:/etc$ 
+    foobar@debian12:/etc$ bash --version
+    GNU bash, version 5.2.15(1)-release (aarch64-unknown-linux-gnu)
+    Copyright (C) 2022 Free Software Foundation, Inc.
+    License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+    This is free software; you are free to change and redistribute it.
+    There is NO WARRANTY, to the extent permitted by law.
+    foobar@debian12:/etc$ 
+    ``` 
 - Running commands in the background
     - `firefox &`
 - Becoming `root` user
