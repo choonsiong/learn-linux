@@ -193,3 +193,6 @@
         abcabc
         foobar@debian12:~$ 
         ```
+- Environment variables
+    - `export varname`
+    - `declare -x varname`        
