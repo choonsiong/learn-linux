@@ -102,6 +102,7 @@
             - by default, `*` does not take files or directories into account that start with a dot (hidden files or directories)
                 - use `shopt -s dotglob` to enable capture of hidden files or directories (`shopt -u dotglob` to disable)
         - `**` - all files and directories, also from all subdirectories (from bash 4.0 with `shopt -s globstar`)
+            - `ls **/*.pdf` - show all PDF files in the current directory and all subdirectories
         - `[abc]` - one of the specified characters
         - `[a-f]` - a character from the specified range
         - `[!abc]` - none of the specified characters
