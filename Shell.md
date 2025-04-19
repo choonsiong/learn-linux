@@ -42,9 +42,12 @@
 
 ## Commands
 
-- `less`
+- `cat`
+- `less` (or `more`)
     - `less file`
     - `ls -l | less`
     - `ps ax | less`
 - `ls`
     - `ls -l`
+- `reset` - reset the terminal (e.g., the terminal shows only cryptic characters...)
+- `tail`
