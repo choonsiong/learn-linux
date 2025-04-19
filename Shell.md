@@ -42,5 +42,9 @@ $ gconftool-2 \
 
 ## Commands
 
+- `less`
+    - `less file`
+    - `ls -l | less`
+    - `ps ax | less`
 - `ls`
     - `ls -l`
