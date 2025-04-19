@@ -94,3 +94,18 @@
         alias more='less'
         foobar@debian12:/tmp$ 
         ```
+- Shell globbing
+    - `bash` replaced the search pattern with actual matching file names
+    - characters for globbing
+        - `?` - exactly one character
+        - `*` - any number (also zero) or arbitrary characters (but no .* files!)
+        - `**` - all files and directories, also from all subdirectories (from bash 4.0 with `shopt -s globstar`)
+        - `[abc]` - one of the specified characters
+        - `[a-f]` - a character from the specified range
+        - `[!abc]` - none of the specified characters
+        - `[^abc]` - none of the specified characters
+- Substitution or expansion
+    - characters for substitution
+        - `~` - abbreviation for home directory
+        - `.` - current directory
+        - `..` - parent directory
