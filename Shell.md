@@ -46,11 +46,13 @@
 - Input and output redirection
     - Three standard files (file descriptors)
         - standard input `<`
+            - `cat < file`
         - standard output `>`
             - `ls -l > output.txt`
             - `ls -l >> output.txt` (append)
         - standard error `2>`
             - `ls -l > output.txt 2> error.txt`
+        > It is not possible to edit a file and write the result back to this file at the same time! `sort file > file` or `sort < file > file` causes `file` to be deleted!
 - Search for commands
     - `whereis name` - searches all default directories
     - `which name` - searches all directories contained in `PATH`
