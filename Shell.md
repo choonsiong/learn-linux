@@ -25,7 +25,7 @@
     There is NO WARRANTY, to the extent permitted by law.
     foobar@debian12:/etc$ 
     ``` 
-- Changing running shell
+- Changing running shell (`cat /etc/shells` for available shells)
     ```
     foobar@debian12:/etc$ 
     foobar@debian12:/etc$ grep foobar /etc/passwd
