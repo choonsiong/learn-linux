@@ -207,9 +207,9 @@
         - `PATH`
         - `PROMPT_COMMAND` - can contain a command that is executed each time before `bash` displays the command prompt
         - `PS1`
-        - `PS2`
+        - `PS2` - for multiline entries, default is `>`
         - `PWD`
-        - `RANDOM`        
+        - `RANDOM` - a random number between 0 and 32767
         ```
         foobar@debian12:~$ echo $BASH
         /usr/bin/bash    
