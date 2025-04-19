@@ -34,11 +34,11 @@
             root@debian12:~# 
             ```        
 - Use `\` to split commands into different lines
-```
-$ gconftool-2 \
-  --set "/abc/def" \
-  --type integer "0"
-```
+    ```
+    $ gconftool-2 \
+    --set "/abc/def" \
+    --type integer "0"
+    ```
 
 ## Commands
 
