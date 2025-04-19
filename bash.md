@@ -146,7 +146,17 @@
                 foobar@debian12:~$ 
                 ```
             - or use `$[expression]` or `expr` command            
-        - `$(command)` or \`command\` - replaces the command with its result
+        - `$(command)` or \`command\` (command substitution) - replaces the command with its result
+            ```
+            foobar@debian12:~$ ls -l $(find /usr/share -name '*README*') | head -5
+            find: '/usr/share/polkit-1/rules.d': Permission denied
+            -rw-r--r-- 1 root root  1712 Feb  9  2022 /usr/share/X11/xkb/compat/README
+            -rw-r--r-- 1 root root   461 Feb  9  2022 /usr/share/X11/xkb/geometry/README
+            -rw-r--r-- 1 root root   416 Feb  9  2022 /usr/share/X11/xkb/keycodes/README
+            -rw-r--r-- 1 root root    91 Feb  9  2022 /usr/share/X11/xkb/rules/README
+            -rw-r--r-- 1 root root   246 Feb  9  2022 /usr/share/X11/xkb/types/README
+            foobar@debian12:~$ 
+            ```
         - `command "character"`
         - `command 'character'`    
 - Use `set -x` to see how `bash` works internally, `bash` then displays the way the command line is parsed before executing any further command
