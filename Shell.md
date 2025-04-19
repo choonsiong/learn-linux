@@ -48,10 +48,10 @@
     - `ls -l | less`
     - `ps ax | less`
     - common shortcut keys
-        - g / shift+g - jump to beginning/end of file
-        - / - forward search
-        - ? - backward search
-        - n / shift+n - repeats forward/backward search        
+        - `g / shift+g` - jump to beginning/end of file
+        - `/` - forward search
+        - `?` - backward search
+        - `n / shift+n` - repeats forward/backward search        
 - `ls`
     - `ls -l`
 - `reset` - reset the terminal (e.g., the terminal shows only cryptic characters...)
