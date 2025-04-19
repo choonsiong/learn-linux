@@ -151,7 +151,9 @@
         - Only commands that read the commands to be processed from the default input channel are suitable for formulating a pipe (else use `xargs`)
 - Executing commands
     - `cmd1; cmd2`- executes the commands one after the after
+        - `ls; date`
     - `cmd1 && cmd2` - executes command 2 if command 1 was successful
+        - `apt update && apt full-upgrade -y`
     - `cmd1 || cmd2` - executes command 2 if command 1 returns an error
     - `cmd &` - starts the command in the background
     - `cmd1 & cmd2` - starts command 1 in the background, command 2 in the foreground
