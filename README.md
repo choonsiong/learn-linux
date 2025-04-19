@@ -7,4 +7,4 @@
     - [`bash`](https://github.com/choonsiong/learn-linux/blob/main/bash.md)
 - [Bookmarks](https://github.com/choonsiong/learn-linux/blob/main/Bookmarks.md)
 
-![img](tmp/linux.svg)
+![img](tmp/linux2.svg)
