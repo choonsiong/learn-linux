@@ -7,6 +7,7 @@
 - Shell vs Terminal
     - On Linux, the terminal program is only responsible for the external user interface, the actual work is done by the shell that is executed inside the terminal.
 - To run a command or a script, `bash` creates a new process with its own PID number.
+    - only those declared as environment variables (`export` or `declare -x`) are passed to the new process
 - Check running shell
     ```
     $ 
