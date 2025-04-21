@@ -195,3 +195,11 @@
     Hello foo bar
     foobar@debian12:~$    
     ```
+- Heredoc
+    ```
+    foobar@debian12:~$ cat <<EOF > demo
+    > Line 1
+    > Line 2
+    > EOF
+    foobar@debian12:~$ 
+    ```
