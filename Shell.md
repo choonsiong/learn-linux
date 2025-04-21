@@ -203,6 +203,7 @@
     > EOF
     foobar@debian12:~$ 
 
+    # stores multiline text in a variable
     foobar@debian12:~$ 
     foobar@debian12:~$ read -r -d '' demo <<EOF
     > Line 1
