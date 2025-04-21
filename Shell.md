@@ -15,6 +15,19 @@
         - changing variables in one shell has no effect on variables in the other shell
     - you can also run a script within the current `bash` - that is, without automatically starting a subshell
         - use `source script` or `. script` to run a script within the current `bash` - that is, without automatically starting a subshell
+            ```
+            $
+            $ echo $PATH | grep $(pwd)
+            $
+            $ ./addpwd.sh 
+            $
+            $ echo $PATH | grep $(pwd)
+            $ source addpwd.sh 
+            $
+            $ echo $PATH | grep $(pwd)
+            /Users/choonsiong/bin:/Users/choonsiong/env/terraform/latest:/Users/choonsiong/env/golang/latest/bin:/Users/choonsiong/go/bin:/usr/local/mysql/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/choonsiong/env/ant/latest/bin:/Users/choonsiong/env/maven/latest/bin:/Users/choonsiong/env/tomcat9/latest/bin:/Users/choonsiong/Developer/Linux/learn-linux/demo
+            $
+            ```
 - Check running shell
     ```
     $ 
