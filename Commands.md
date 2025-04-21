@@ -96,6 +96,21 @@
     _=/usr/bin/printenv
     foobar@debian12:~$
     ```
+- `read` - process user input
+    ```
+    foobar@debian12:~$ 
+    foobar@debian12:~$ ./demo.sh 
+    Enter password: 
+    Password is: test
+    foobar@debian12:~$ cat demo.sh 
+    #!/bin/bash
+
+    echo -n "Enter password: "
+    read -s password
+    echo
+    echo "Password is: $password"
+    foobar@debian12:~$
+    ```
 - `reset` - reset the terminal (e.g., the terminal shows only cryptic characters...)
 - `set` - lists all variables
 - `tail`
