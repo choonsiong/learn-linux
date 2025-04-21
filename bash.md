@@ -181,7 +181,13 @@
             foobar@debian12:~$                          
             ```
         - `command "character"`
-        - `command 'character'`    
+        - `command 'character'`
+    - parameter substitution - to edit character strings stored in variables
+        - `${var:-default}` - It returns the default if the variable is empty, else returns the content of the variable, the variable is not changed
+        - `${var:=default}` - The content of the variable is changed at the same time if it was previously empty
+        - `${var:+new}` - If the variable is empty, it remains empty. If, on the other hand, the variable is already being used, the previous content is replaced by a new setting. The construct provides the new content of the variables.
+        - `${var:?errormessage}` - If the variable is empty, the variable name and the error message are output, and the shell program then gets terminated. Otherwise, the construct returns the content of the variable.
+        - `${#var}`
 - Use `set -x` to see how `bash` works internally, `bash` then displays the way the command line is parsed before executing any further command
 - Variables
     - `bash` variables can only store strings
