@@ -9,6 +9,8 @@
 - To run a command or a script, `bash` creates a new process with its own PID number.
     - only those declared as environment variables (`export` or `declare -x`) are passed to the new process
     - when a program is started in the foreground, `bash` enters the background during its execution and waits for the command to finish
+    - the processing of a script takes place not in the running shell, but in a subshell started especially for this purpose
+        - so now there are two instances of `bash` running - one as its command interpreter and the second one to execute the script
 - Check running shell
     ```
     $ 
