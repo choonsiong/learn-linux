@@ -39,3 +39,5 @@
 - Function using `function`
 - The `test` command
     - `test "$x"`
+    - `test $x -gt 5`
+    - `test -f $x`
