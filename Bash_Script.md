@@ -68,7 +68,13 @@
         foobar@debian12:~$ ls
         file1.txt      file10.txt      file2.txt      file3.txt      file4.txt      file5.txt      file6.txt      file7.txt      file8.txt      file9.txt
         file1.txt.bak  file10.txt.bak  file2.txt.bak  file3.txt.bak  file4.txt.bak  file5.txt.bak  file6.txt.bak  file7.txt.bak  file8.txt.bak  file9.txt.bak
-        foobar@debian12:~$         
+        foobar@debian12:~$ 
+
+        # Set the IFS so that file names with spaces also work correctly
+        IFS=$'\n'
+        for file in $*; do
+            cp "$file" "$file.bak"
+        done
         ```        
 - Function using `function`
 - The `test` command - short notation `[ expression ]` or `[[ expression ]]`
