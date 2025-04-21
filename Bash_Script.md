@@ -59,3 +59,5 @@
         - `[[ s = pattern* ]]` - true if the string starts with `pattern`
         - `[[ s == pattern* ]]` - as above
         - `[[ s ~= pattern ]]` - true if the regular pattern is true
+        - `[[ s1 && s2 ]]` - true if both conditions are true
+        - `[[ s1 || s2 ]]` - true if one of the conditions is true
