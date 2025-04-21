@@ -234,4 +234,12 @@
         foobar@debian12:~$ echo $RANDOM
         5717
         foobar@debian12:~$
-        ```        
+        ```
+- Predefined shell variables
+    - `$?` - return value of the last command
+    - `$!` - PID of the last started background process
+    - `$$` - PID of the current shell
+    - `$0` - filename of the currently executed shell script (or of the symbolic link referencing the file)
+    - `$#` - number of parameters passed to the shell program
+    - `$1` to `$9` - parameters 1 to 9
+    - `$*` or `$@` - totality of all passed parameters
