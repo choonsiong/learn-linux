@@ -39,6 +39,35 @@
         - `n / shift+n` - repeats forward/backward search        
 - `ls`
     - `ls -l`
+- `mapfile` - to read an entire text file line by line into the elements of an array
+    ```
+    foobar@debian12:~$ cat users.txt 
+    foobar
+    alice
+    john
+    david
+    jason
+    lily
+    vivian
+    foobar@debian12:~$ cat demo.sh 
+    #!/bin/bash
+
+    mapfile usernames < users.txt
+
+    for item in "${usernames[@]}"; do
+        echo -n "$item"
+    done
+
+    foobar@debian12:~$ ./demo.sh 
+    foobar
+    alice
+    john
+    david
+    jason
+    lily
+    vivian
+    foobar@debian12:~$ 
+    ```
 - `mkfifo`
 - `printenv` - lists only environment variables
     ```

@@ -193,5 +193,5 @@
     Hello $NAME
     foobar@debian12:~$ echo "Hello $NAME"
     Hello foo bar
-    foobar@debian12:~$
+    foobar@debian12:~$    
     ```
