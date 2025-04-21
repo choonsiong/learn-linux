@@ -182,7 +182,7 @@
             ```
         - `command "character"`
         - `command 'character'`
-    - parameter substitution - to edit character strings stored in variables
+    - **parameter substitution** - to edit character strings stored in variables
         - `${var:-default}` - It returns the default if the variable is empty, else returns the content of the variable, the variable is not changed
         - `${var:=default}` - The content of the variable is changed at the same time if it was previously empty
         - `${var:+new}` - If the variable is empty, it remains empty. If, on the other hand, the variable is already being used, the previous content is replaced by a new setting. The construct provides the new content of the variables.
