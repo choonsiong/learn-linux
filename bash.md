@@ -191,6 +191,28 @@
         - `${var:n}` - Returns the character string stored in `var` from the nth character, with the count starting at 0.
         - `${var:offset:len}` - Skips `offset` characters and then returns `len` characters.
         - `${var#pattern}` - Compares the beginning of the variable with the specified pattern. If the pattern is recognized, the construct returns the contents of the variable minus the shortest possible text that matches the search pattern. If, the pattern is not found, the entire contents of the variable are returned. Wildcard characters `* ? [abc]` can be used. The variable is not changed.
+            ```
+            foobar@debian12:~$ 
+            foobar@debian12:~$ data=/home/foo/book/book.tar.gz
+            foobar@debian12:~$ echo ${data#*/}
+            home/foo/book/book.tar.gz
+            foobar@debian12:~$ 
+            foobar@debian12:~$ echo ${data#*.}
+            tar.gz
+            foobar@debian12:~$ 
+            ```
+        - `${var##pattern}` - As the previous item, but now the largest possible string that matches the pattern is eliminated.
+            ```
+            foobar@debian12:~$ 
+            foobar@debian12:~$ data=/home/foo/book/book.tar.gz
+            foobar@debian12:~$ 
+            foobar@debian12:~$ echo ${data##*/}
+            book.tar.gz
+            foobar@debian12:~$ 
+            foobar@debian12:~$ echo ${data##*.}
+            gz
+            foobar@debian12:~$ 
+            ```        
 - Use `set -x` to see how `bash` works internally, `bash` then displays the way the command line is parsed before executing any further command
 - Variables
     - `bash` variables can only store strings
