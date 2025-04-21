@@ -70,7 +70,7 @@
         file1.txt.bak  file10.txt.bak  file2.txt.bak  file3.txt.bak  file4.txt.bak  file5.txt.bak  file6.txt.bak  file7.txt.bak  file8.txt.bak  file9.txt.bak
         foobar@debian12:~$ 
 
-        # Set the IFS so that file names with spaces also work correctly
+        # Set the IFS so that file names with spaces also work correctly when passed to a script from command line
         IFS=$'\n'
         for file in $*; do
             cp "$file" "$file.bak"
