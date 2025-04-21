@@ -19,3 +19,7 @@
     ```
 - `shift` - this command virtually pushes the passed parameters through  the ten variables `$0` to `$9`.
     - e.g., if you execute `shift 9`, the first nine parameters passed to the program are lost, but then the next nine parameters can be conveniently addressed
+    - shift without further specification shifts the parameter list by one parameter
+- Arrays
+    - up to and including version 3, the index must be a number
+    - `${field[n]}` syntax for accessing the nth element
