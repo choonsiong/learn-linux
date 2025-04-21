@@ -196,6 +196,7 @@
     foobar@debian12:~$    
     ```
 - Heredoc
+    - In the `read` command below, `-r` causes the character string to be accepted unchanged (raw), `-d ''` means that the end of the line does not count as the end of the input, it's important to enclose the variable in quotation marks; otherwise, the line breaks will be lost 
     ```
     foobar@debian12:~$ cat <<EOF > demo
     > Line 1
