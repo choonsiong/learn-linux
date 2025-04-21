@@ -202,4 +202,14 @@
     > Line 2
     > EOF
     foobar@debian12:~$ 
+
+    foobar@debian12:~$ 
+    foobar@debian12:~$ read -r -d '' demo <<EOF
+    > Line 1
+    > Line 2
+    > EOF
+    foobar@debian12:~$ echo "$demo"
+    Line 1
+    Line 2
+    foobar@debian12:~$    
     ```
