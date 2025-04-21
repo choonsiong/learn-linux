@@ -75,6 +75,23 @@
         for file in $*; do
             cp "$file" "$file.bak"
         done
+
+        for db in $(cat dbs.txt); do
+            mysqldump $db | gzip -c > $db.sql.gz
+        done
+
+        for i in {1..12}; do
+            echo "$i"
+        done
+
+        # step 3
+        for i in {1..100..3}; do
+            echo "$i"
+        done
+
+        for ((i=0; i<10; i++)); do
+            echo "$i"
+        done    
         ```        
 - Function using `function`
 - The `test` command - short notation `[ expression ]` or `[[ expression ]]`
