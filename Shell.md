@@ -6,6 +6,7 @@
 - On the other hand, we speak of an *interactive shell* if the login has already happened earlier and the shell is started later - if required. This is always true if you first log into a desktop system and then open a terminal window. There again a shell is started, which waits for your commands.
 - Shell vs Terminal
     - On Linux, the terminal program is only responsible for the external user interface, the actual work is done by the shell that is executed inside the terminal.
+- To run a command or a script, `bash` creates a new process with its own PID number.
 - Check running shell
     ```
     $ 
