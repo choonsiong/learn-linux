@@ -212,7 +212,56 @@
             foobar@debian12:~$ echo ${data##*.}
             gz
             foobar@debian12:~$ 
-            ```        
+            ```
+        - `${var%pattern}` - Like `${var#pattern}`, but now the pattern matching is done at the end of the variable content. The shortest possible string from the end of the variable is eliminated. The variable itself remains unchanged.
+            ```
+            foobar@debian12:~$ 
+            foobar@debian12:~$ data=/home/foo/book/book.tar.gz
+            foobar@debian12:~$ 
+            foobar@debian12:~$ echo ${data%/*}
+            /home/foo/book
+            foobar@debian12:~$ 
+            foobar@debian12:~$ echo ${data%.*}
+            /home/foo/book/book.tar
+            foobar@debian12:~$ 
+            ```
+        - `${var%%pattern}` - As the previous item, but the largest possible character string is eliminated.
+            ```
+            foobar@debian12:~$ 
+            foobar@debian12:~$ data=/home/foo/book/book.tar.gz
+            foobar@debian12:~$ echo ${data%%.*}
+            /home/foo/book/book
+            foobar@debian12:~$ 
+            foobar@debian12:~$ echo ${data%%/*}
+
+            foobar@debian12:~$ 
+            foobar@debian12:~$ 
+            ```
+        - `${var/find/replace}` - Replaces the first occurrence of the `find` pattern with `replace`.
+            ```
+            foobar@debian12:~$ 
+            foobar@debian12:~$ data=/home/foo/book/book.tar.gz
+            foobar@debian12:~$ echo ${data/book/movie}
+            /home/foo/movie/book.tar.gz
+            foobar@debian12:~$ 
+            ```
+        - `${var//find/replace}` - Replaces every occurrence of the `find` pattern with `replace`.
+            ```
+            foobar@debian12:~$ 
+            foobar@debian12:~$ data=/home/foo/book/book.tar.gz
+            foobar@debian12:~$ 
+            foobar@debian12:~$ echo ${data//book/movie}
+            /home/foo/movie/movie.tar.gz
+            foobar@debian12:~$ 
+            ```
+        - `${!var}` - Returns the content of the variable whose name is contained in `var` as a character string.
+            ```
+            foobar@debian12:~$ name='foo bar'
+            foobar@debian12:~$ user=name
+            foobar@debian12:~$ echo ${!user}
+            foo bar
+            foobar@debian12:~$
+            ```                            
 - Use `set -x` to see how `bash` works internally, `bash` then displays the way the command line is parsed before executing any further command
 - Variables
     - `bash` variables can only store strings
