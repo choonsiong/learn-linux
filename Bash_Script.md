@@ -24,5 +24,16 @@
     - up to and including version 3, the index must be a number
     - `${field[n]}` syntax for accessing the nth element
 - Create branches using `if`, `case`
+    ```
+    if [ $# -ne 2 ]; then
+        echo "Two parameters are required: <username> <password>"
+        exit 2
+    else
+        username=$1
+        password=$2
+        echo "Username is: $username"
+        echo "Password is: $password"
+    fi
+    ```
 - Loops using `for`, `while`, `until`
 - Function using `function`
