@@ -44,5 +44,14 @@
         - `-ne`
         - `-lt`
         - `-le`
-        - `-ge`        
-    - `test -f $x`
+        - `-ge`
+            ```
+            foobar@debian12:~$ 
+            foobar@debian12:~$ a=42
+            foobar@debian12:~$ test $a -eq 42; echo $?
+            0
+            foobar@debian12:~$ test $a -ne 42; echo $?
+            1
+            foobar@debian12:~$
+            ```        
+    - `test -f $x` - checks whether a file with the name specified in `x` exists
