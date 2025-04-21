@@ -37,7 +37,7 @@
     ```
 - Loops using `for`, `while`, `until`
 - Function using `function`
-- The `test` command
+- The `test` command - short notation `[ expression ]` or `[[ expression ]]`
     - `test "$x"` - checks whether `x` is in use. The result is false if the string has 0 characters, otherwise it is true.
     - `test $x -gt 5` - checks whether the `x` variable contains a numerical value greater than 5. If `x` does not contain a number, an error message occurs.
         - `-eq`
@@ -55,3 +55,7 @@
             foobar@debian12:~$
             ```        
     - `test -f $x` - checks whether a file with the name specified in `x` exists
+    - additional test options
+        - `[[ s = pattern* ]]` - true if the string starts with `pattern`
+        - `[[ s == pattern* ]]` - as above
+        - `[[ s ~= pattern ]]` - true if the regular pattern is true
