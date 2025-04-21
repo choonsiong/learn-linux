@@ -92,7 +92,36 @@
         for ((i=0; i<10; i++)); do
             echo "$i"
         done    
-        ```        
+        ```
+    - `while`
+        ```
+        foobar@debian12:~$ i=1; while [ $i -le 10 ]; do echo $i; i=$(($i+1)); done
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+        foobar@debian12:~$
+
+        foobar@debian12:~$ 
+        foobar@debian12:~$ ls
+        file1.txt      file10.txt      file2.txt      file3.txt      file4.txt      file5.txt      file6.txt      file7.txt      file8.txt      file9.txt
+        file1.txt.bak  file10.txt.bak  file2.txt.bak  file3.txt.bak  file4.txt.bak  file5.txt.bak  file6.txt.bak  file7.txt.bak  file8.txt.bak  file9.txt.bak
+        foobar@debian12:~$ 
+        foobar@debian12:~$ ls *.bak | while read file
+        > do
+        > rm -f "$file"
+        > done
+        foobar@debian12:~$ 
+        foobar@debian12:~$ ls
+        file1.txt  file10.txt  file2.txt  file3.txt  file4.txt  file5.txt  file6.txt  file7.txt  file8.txt  file9.txt
+        foobar@debian12:~$         
+        ```    
 - Function using `function`
 - The `test` command - short notation `[ expression ]` or `[[ expression ]]`
     - `test "$x"` - checks whether `x` is in use. The result is false if the string has 0 characters, otherwise it is true.
