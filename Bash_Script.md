@@ -38,6 +38,11 @@
 - Loops using `for`, `while`, `until`
 - Function using `function`
 - The `test` command
-    - `test "$x"`
-    - `test $x -gt 5`
+    - `test "$x"` - checks whether `x` is in use. The result is false if the string has 0 characters, otherwise it is true.
+    - `test $x -gt 5` - checks whether the `x` variable contains a numerical value greater than 5. If `x` does not contain a number, an error message occurs.
+        - `-eq`
+        - `-ne`
+        - `-lt`
+        - `-le`
+        - `-ge`        
     - `test -f $x`
