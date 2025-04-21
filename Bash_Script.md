@@ -140,19 +140,21 @@
         ```        
 - Function using `function`
     - within the function, local variables can be defined by using `local`
-    ```
-    function myfunc {
-        echo "Hello, $1"
-    }
+    - functions must be declared before their first call
+    - `function` keyword
+        ```
+        function myfunc {
+            echo "Hello, $1"
+        }
 
-    myfunc "World"
+        myfunc "World"
 
-    myfunc() {
-        echo "Hello, $1"
-    }
+        myfunc() {
+            echo "Hello, $1"
+        }
 
-    myfunc "World"    
-    ```
+        myfunc "World"    
+        ```
 - The `test` command - short notation `[ expression ]` or `[[ expression ]]`
     - `test "$x"` - checks whether `x` is in use. The result is false if the string has 0 characters, otherwise it is true.
     - `test $x -gt 5` - checks whether the `x` variable contains a numerical value greater than 5. If `x` does not contain a number, an error message occurs.
