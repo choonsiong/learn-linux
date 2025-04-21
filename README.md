@@ -6,4 +6,5 @@
 - [Shell](https://github.com/choonsiong/learn-linux/blob/main/Shell.md)
     - [`bash`](https://github.com/choonsiong/learn-linux/blob/main/bash.md)
         - [`bash` script](https://github.com/choonsiong/learn-linux/blob/main/Bash_Script.md)
+    - [`zsh`](https://github.com/choonsiong/learn-linux/blob/main/zsh.md)
 - [Bookmarks](https://github.com/choonsiong/learn-linux/blob/main/Bookmarks.md)
