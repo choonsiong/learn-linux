@@ -187,7 +187,10 @@
         - `${var:=default}` - The content of the variable is changed at the same time if it was previously empty
         - `${var:+new}` - If the variable is empty, it remains empty. If, on the other hand, the variable is already being used, the previous content is replaced by a new setting. The construct provides the new content of the variables.
         - `${var:?errormessage}` - If the variable is empty, the variable name and the error message are output, and the shell program then gets terminated. Otherwise, the construct returns the content of the variable.
-        - `${#var}`
+        - `${#var}` - Returns the number of characters stored in the variable as the result (0 if the variable is empty). The variable is not changed.
+        - `${var:n}` - Returns the character string stored in `var` from the nth character, with the count starting at 0.
+        - `${var:offset:len}` - Skips `offset` characters and then returns `len` characters.
+        - `${var#pattern}` - Compares the beginning of the variable with the specified pattern. If the pattern is recognized, the construct returns the contents of the variable minus the shortest possible text that matches the search pattern. If, the pattern is not found, the entire contents of the variable are returned. Wildcard characters `* ? [abc]` can be used. The variable is not changed.
 - Use `set -x` to see how `bash` works internally, `bash` then displays the way the command line is parsed before executing any further command
 - Variables
     - `bash` variables can only store strings
