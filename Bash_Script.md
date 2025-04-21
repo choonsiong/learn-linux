@@ -37,3 +37,5 @@
     ```
 - Loops using `for`, `while`, `until`
 - Function using `function`
+- The `test` command
+    - `test "$x"`
