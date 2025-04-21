@@ -121,7 +121,23 @@
         foobar@debian12:~$ ls
         file1.txt  file10.txt  file2.txt  file3.txt  file4.txt  file5.txt  file6.txt  file7.txt  file8.txt  file9.txt
         foobar@debian12:~$         
-        ```    
+        ```
+    - `until`
+        ```
+        foobar@debian12:~$ 
+        foobar@debian12:~$ i=1; until [ $i -gt 10 ]; do echo $i; i=$(($i+1)); done
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+        foobar@debian12:~$
+        ```        
 - Function using `function`
 - The `test` command - short notation `[ expression ]` or `[[ expression ]]`
     - `test "$x"` - checks whether `x` is in use. The result is false if the string has 0 characters, otherwise it is true.
