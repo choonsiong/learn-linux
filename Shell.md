@@ -25,7 +25,7 @@
             $ source addpwd.sh 
             $
             $ echo $PATH | grep $(pwd)
-            /Users/choonsiong/bin:/Users/choonsiong/env/terraform/latest:/Users/choonsiong/env/golang/latest/bin:/Users/choonsiong/go/bin:/usr/local/mysql/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/choonsiong/env/ant/latest/bin:/Users/choonsiong/env/maven/latest/bin:/Users/choonsiong/env/tomcat9/latest/bin:/Users/choonsiong/Developer/Linux/learn-linux/demo
+            /usr/bin:/bin:/usr/sbin:/sbin:/Users/choonsiong/Developer/Linux/learn-linux/demo
             $
             ```
 - Check running shell
