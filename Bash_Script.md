@@ -23,3 +23,6 @@
 - Arrays
     - up to and including version 3, the index must be a number
     - `${field[n]}` syntax for accessing the nth element
+- Create branches using `if`, `case`
+- Loops using `for`, `while`, `until`
+- Function using `function`
