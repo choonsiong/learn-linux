@@ -33,6 +33,15 @@
         foobar:x:1001:1001::/home/foobar:/usr/bin/zsh
         foobar@debian12:~$ 
         ```
+
+| Global          | Local       | Login Shell | Interactive Shell | Script |
+| --------------- | ----------- | ----------- | ----------------- | ------ |
+| `/etc/zshenv`   | `.zshenv`   | ✅          | ✅                | ✅      |
+| `/etc/zshrc`    | `.zshrc`    | ✅          | ✅                |         |     
+| `/etc/zprofile` | `.zprofile` | ✅          |                   |         |
+| `/etc/zlogin`   | `.zlogin`   | ✅          |                   |         |
+| `/etc/zlogout`  | `.zlogout`  | ✅          |                   |         |
+
 - `zsh` configuration files
     - `zsh` parses the global configuration files first, then the local files
         - depends on the distribution, the global configuration files are not located directly in the `/etc` directory, but in the `/etc/zsh` directory (Debian and Ubuntu)
@@ -53,12 +62,5 @@
         - the two most important configuration files are `.zshenv` and `.zshrc`
             - `.zshenv` is primarily intended for defining environment variables that should also be available in scripts
             - `.zshrc` is the right place to set options for interactive use of `zsh`, to define custom aliases, and so on
-
-
-| Global          | Local       | Login Shell | Interactive Shell | Script |
-| --------------- | ----------- | ----------- | ----------------- | ------ |
-| `/etc/zshenv`   | `.zshenv`   | ✅          | ✅                | ✅      |
-| `/etc/zshrc`    | `.zshrc`    | ✅          | ✅                |         |     
-| `/etc/zprofile` | `.zprofile` | ✅          |                   |         |
-| `/etc/zlogin`   | `.zlogin`   | ✅          |                   |         |
-| `/etc/zlogout`  | `.zlogout`  | ✅          |                   |         |
+        - if `zsh` detects that there are no configuration files in home directory yet, it starts the `zsh-newuser-install` configuration help
+            - to run it again
