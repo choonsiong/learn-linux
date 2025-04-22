@@ -53,6 +53,12 @@
 - [Bash Scripting Tutorial: How to write a Bash Script](https://linuxconfig.org/bash-scripting-tutorial)
 - [Colorizing Terminal and Shell in Linux](https://www.baeldung.com/linux/terminal-shell-colors)
 - [GNU Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
+- [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+	- [plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins)
+	- [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
+	- [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+	- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+	- [Top popular zsh plugins on github](https://safjan.com/top-popular-zsh-plugins-on-github/)
 - [The Z Shell Manual](https://zsh.sourceforge.io/Doc/Release/index.html)
 	- [Glob Qualifiers](https://zsh.sourceforge.io/Doc/Release/Expansion.html#Glob-Qualifiers)
 
