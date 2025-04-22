@@ -17,7 +17,7 @@
     /usr/bin/bash
     foobar@debian12:~$    
     ```
-- To switch to `zsh`, install `zsh` with `sudo apt install zsh`
+- To switch to `zsh`, use `chsh` (from `passwd` or `util-linux-user` package), install `zsh` with `sudo apt install zsh`
     - Log out and log in again to take effect of the new shell
         ```
         foobar@debian12:~$ 
@@ -33,3 +33,7 @@
         foobar:x:1001:1001::/home/foobar:/usr/bin/zsh
         foobar@debian12:~$ 
         ```
+- `zsh` configuration files
+| Global | Local | Login Shell | Interactive Shell | Script |
+| -------| ----- | ----------- | ----------------- | ------ |
+| `/etc/zshenv` | `.zshenv` | . | . | . |     
