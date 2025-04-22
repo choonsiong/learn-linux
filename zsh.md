@@ -54,11 +54,11 @@
             - `.zshenv` is primarily intended for defining environment variables that should also be available in scripts
             - `.zshrc` is the right place to set options for interactive use of `zsh`, to define custom aliases, and so on
 
-        
-    | Global          | Local       | Login Shell | Interactive Shell | Script |
-    | --------------- | ----------- | ----------- | ----------------- | ------ |
-    | `/etc/zshenv`   | `.zshenv`   | ✅          | ✅                | ✅      |
-    | `/etc/zshrc`    | `.zshrc`    | ✅          | ✅                |         |     
-    | `/etc/zprofile` | `.zprofile` | ✅          |                   |         |
-    | `/etc/zlogin`   | `.zlogin`   | ✅          |                   |         |
-    | `/etc/zlogout`  | `.zlogout`  | ✅          |                   |         |
+
+| Global          | Local       | Login Shell | Interactive Shell | Script |
+| --------------- | ----------- | ----------- | ----------------- | ------ |
+| `/etc/zshenv`   | `.zshenv`   | ✅          | ✅                | ✅      |
+| `/etc/zshrc`    | `.zshrc`    | ✅          | ✅                |         |     
+| `/etc/zprofile` | `.zprofile` | ✅          |                   |         |
+| `/etc/zlogin`   | `.zlogin`   | ✅          |                   |         |
+| `/etc/zlogout`  | `.zlogout`  | ✅          |                   |         |
