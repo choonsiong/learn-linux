@@ -35,7 +35,10 @@
         ```
 - `zsh` configuration files
 
-| Global        | Local     | Login Shell | Interactive Shell | Script |
-| --------------| --------- | ----------- | ----------------- | ------ |
-| `/etc/zshenv` | `.zshenv` | ✅ | ✅ | ✅ |
-| `/etc/zshrc`  | `.zshrc`  | ✅ | ✅ |    |     
+| Global          | Local       | Login Shell | Interactive Shell | Script |
+| --------------- | ----------- | ----------- | ----------------- | ------ |
+| `/etc/zshenv`   | `.zshenv`   | ✅          | ✅                | ✅      |
+| `/etc/zshrc`    | `.zshrc`    | ✅          | ✅                |         |     
+| `/etc/zprofile` | `.zprofile` | ✅          |                   |         |  
+| `/etc/zlogin`   | `.zlogin`   | ✅          |                   |         |
+| `/etc/zlogout`  | `.zlogout`  | ✅          |                   |         |
