@@ -53,6 +53,7 @@
         - the two most important configuration files are `.zshenv` and `.zshrc`
             - `.zshenv` is primarily intended for defining environment variables that should also be available in scripts
             - `.zshrc` is the right place to set options for interactive use of `zsh`, to define custom aliases, and so on
+
         
     | Global          | Local       | Login Shell | Interactive Shell | Script |
     | --------------- | ----------- | ----------- | ----------------- | ------ |
