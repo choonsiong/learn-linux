@@ -64,3 +64,7 @@
             - `.zshrc` is the right place to set options for interactive use of `zsh`, to define custom aliases, and so on
         - if `zsh` detects that there are no configuration files in home directory yet, it starts the `zsh-newuser-install` configuration help
             - to run it again
+            ```
+            autoload -U zsh-newuser-install
+            zsh-newuser-install -f
+            ```            
