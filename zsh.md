@@ -70,3 +70,15 @@
             zsh-newuser-install -f
             ```
     - `setopt <name>` enables you to activate an option, `unsetopt <name>` allows you to deactivate it again
+        ```
+        $
+        $ setopt
+        autocd
+        combiningchars
+        interactive
+        login
+        monitor
+        shinstdin
+        zle
+        $
+        ```    
