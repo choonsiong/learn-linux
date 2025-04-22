@@ -50,7 +50,10 @@
             -rw-r--r--   1 root root  3900 Feb 25  2022 zshrc
             foobar@debian12:/etc/zsh$ 
             ```        
-
+        - the two most important configuration files are `.zshenv` and `.zshrc`
+            - `.zshenv` is primarily intended for defining environment variables that should also be available in scripts
+            - `.zshrc` is the right place to set options for interactive use of `zsh`, to define custom aliases, and so on
+        
 | Global          | Local       | Login Shell | Interactive Shell | Script |
 | --------------- | ----------- | ----------- | ----------------- | ------ |
 | `/etc/zshenv`   | `.zshenv`   | ✅          | ✅                | ✅      |
