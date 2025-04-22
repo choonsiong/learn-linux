@@ -63,8 +63,10 @@
             - `.zshenv` is primarily intended for defining environment variables that should also be available in scripts
             - `.zshrc` is the right place to set options for interactive use of `zsh`, to define custom aliases, and so on
         - if `zsh` detects that there are no configuration files in home directory yet, it starts the `zsh-newuser-install` configuration help
+            - `man zshoptions`
             - to run `zsh-newuser-install` again
             ```
             autoload -U zsh-newuser-install
             zsh-newuser-install -f
-            ```            
+            ```
+    - `setopt <name>` enables you to activate an option, `unsetopt <name>` allows you to deactivate it again
