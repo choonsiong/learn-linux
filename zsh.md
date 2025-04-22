@@ -71,15 +71,15 @@
             ```
     - `setopt <name>` enables you to activate an option, `unsetopt <name>` allows you to deactivate it again
         - `setopt` alone lists all currently active options
-        ```
-        $
-        $ setopt
-        autocd
-        combiningchars
-        interactive
-        login
-        monitor
-        shinstdin
-        zle
-        $
-        ```    
+            ```
+            $
+            $ setopt
+            autocd
+            combiningchars
+            interactive
+            login
+            monitor
+            shinstdin
+            zle
+            $
+            ```    
