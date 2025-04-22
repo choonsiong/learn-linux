@@ -34,6 +34,7 @@
         foobar@debian12:~$ 
         ```
 - `zsh` configuration files
+
 | Global        | Local     | Login Shell | Interactive Shell | Script |
 | --------------| --------- | ----------- | ----------------- | ------ |
 | `/etc/zshenv` | `.zshenv` | .           | .                 | .      |     
