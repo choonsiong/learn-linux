@@ -36,6 +36,20 @@
 - `zsh` configuration files
     - `zsh` parses the global configuration files first, then the local files
         - depends on the distribution, the global configuration files are not located directly in the `/etc` directory, but in the `/etc/zsh` directory (Debian and Ubuntu)
+        ```
+        foobar@debian12:~$ cd /etc/zsh
+        foobar@debian12:/etc/zsh$ ls -al
+        total 40
+        drwxr-xr-x   2 root root  4096 Mar 31 21:25 .
+        drwxr-xr-x 124 root root 12288 Apr 22 15:45 ..
+        -rw-r--r--   1 root root  1295 Feb 13  2022 newuser.zshrc.recommended
+        -rw-r--r--   1 root root   344 Feb 13  2022 zlogin
+        -rw-r--r--   1 root root    58 Feb 13  2022 zlogout
+        -rw-r--r--   1 root root   264 Feb 13  2022 zprofile
+        -rw-r--r--   1 root root   623 Feb 13  2022 zshenv
+        -rw-r--r--   1 root root  3900 Feb 25  2022 zshrc
+        foobar@debian12:/etc/zsh$ 
+        ```        
 
 | Global          | Local       | Login Shell | Interactive Shell | Script |
 | --------------- | ----------- | ----------- | ----------------- | ------ |
