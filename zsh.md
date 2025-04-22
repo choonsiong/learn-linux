@@ -34,6 +34,8 @@
         foobar@debian12:~$ 
         ```
 - `zsh` configuration files
+    - `zsh` parses the global configuration files first, then the local files
+        - depends on the distribution, the global configuration files are not located directly in the `/etc` directory, but in the `/etc/zsh` directory (Debian and Ubuntu)
 
 | Global          | Local       | Login Shell | Interactive Shell | Script |
 | --------------- | ----------- | ----------- | ----------------- | ------ |
