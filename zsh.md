@@ -37,4 +37,5 @@
 
 | Global        | Local     | Login Shell | Interactive Shell | Script |
 | --------------| --------- | ----------- | ----------------- | ------ |
-| `/etc/zshenv` | `.zshenv` | ✅           | ✅               | ✅      |     
+| `/etc/zshenv` | `.zshenv` | ✅          | ✅                | ✅      |
+| `/etc/zshrc`  | `.zshrc`  | ✅          | ✅                |         |     
