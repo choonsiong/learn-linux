@@ -55,6 +55,6 @@
 | --------------- | ----------- | ----------- | ----------------- | ------ |
 | `/etc/zshenv`   | `.zshenv`   | ✅          | ✅                | ✅      |
 | `/etc/zshrc`    | `.zshrc`    | ✅          | ✅                |         |     
-| `/etc/zprofile` | `.zprofile` | ✅          |                   |         |  
+| `/etc/zprofile` | `.zprofile` | ✅          |                   |         |
 | `/etc/zlogin`   | `.zlogin`   | ✅          |                   |         |
 | `/etc/zlogout`  | `.zlogout`  | ✅          |                   |         |
