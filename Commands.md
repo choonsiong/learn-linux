@@ -88,6 +88,7 @@
     ```
 - `find`
     - `find . -name '*.log'`
+    - `find -maxdepth 1 -type f -name '.*'`
 - `less` (or `more`)
     - `less file`
     - `ls -l | less`
