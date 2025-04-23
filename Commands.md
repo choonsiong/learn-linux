@@ -35,7 +35,30 @@
         mbp2022backup   4.6T  3.5T  1.1T  77% /media/psf/mbp2022backup
         iCloud          3.7T  868G  2.8T  24% /media/psf/iCloud
         root@debian12:~# 
+
+        root@debian12:~# df -h /root
+        Filesystem      Size  Used Avail Use% Mounted on
+        /dev/sda2        62G  5.9G   53G  11% /
+        root@debian12:~#         
         ```    
+- `du`
+    - `du -h`
+        ```
+        root@debian12:~# du -h /root
+        4.0K	/root/.local/share/nano
+        8.0K	/root/.local/share
+        12K	/root/.local
+        4.0K	/root/.ssh
+        4.0K	/root/.cache
+        4.0K	/root/.config/procps
+        8.0K	/root/.config
+        48K	/root
+        root@debian12:~#
+
+        root@debian12:~# du -sh /root
+        48K	/root
+        root@debian12:~#
+        ```        
 - `export` - lists environment variables
     ```
     foobar@debian12:~$ export
