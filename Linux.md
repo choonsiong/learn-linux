@@ -49,3 +49,6 @@
 	- The size of files is almost unlimited with current Linux distributions and is in the terabyte range depending on the file system
 	- The directory tree of Linux starts in the root directory `/`
 	- Home directory `/home/<loginname>`, `~`, `~<loginname>`
+	- Two special directories, `.` and `..`
+		- `.` is a reference to the current directory
+		- `..` is a reference to the parent directory
