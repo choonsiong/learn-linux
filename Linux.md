@@ -73,4 +73,7 @@
 
 | Action | Command | File | Directory |
 | ------ | ------- | ---- | --------- |
-| change to directory | `cd directory` | - | `x` |			
+| Change to directory | `cd directory` | - | `x` |			
+| Determine list of files | `ls directory/*` | - | `r` |
+| Read file information | `ls -l directory/*` | - | `rx` |
+| Create new file | `touch directory/newfile` | - | `wx` |
