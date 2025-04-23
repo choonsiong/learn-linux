@@ -44,3 +44,6 @@
 	- International characters in the file name are allowed, but can cause problems if different character sets are used, such as on a network
 		- From the point of view of the Linux kernel, the file name is simply a byte sequence in which only the / character and the code 0 must not occur
 			- The question how this byte sequence is interpreted depends on the currently valid character set
+	- File names may contain any number of dots
+	- Files that start with a dot are considered hidden files
+	- The size of files is almost unlimited with current Linux distributions and is in the terabyte range depending on the file system
