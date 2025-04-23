@@ -74,7 +74,19 @@
 		- In practice, it's usually convenient to set the `r` bit for base directories as well
 			- If the read permission is missing, the user must know the name of the subdirectory
 		- The operations permitted in the subdirectory depend exclusively on the `rwx` bits of this directory
-			- If the `rwx` rights are set for the subdirectory, files can be read, created, modified, and deleted - even if the `r` and `w` rights are missing in the base directories
+			- If the `rwx` rights are set for the subdirectory, files can be read, created, modified, and deleted - even if the `r` and `w` rights are missing in the base directories (e.g. the `w` is not set for `/` and `/home`, but we still can create subdirectories in our home directory)
+			```
+			foobar@debian12:~$ ls -ld /
+			drwxr-xr-x 19 root root 4096 Mar 31 17:58 /
+			foobar@debian12:~$ 
+			foobar@debian12:~$ ls -ld /home
+			drwxr-xr-x 5 root root 4096 Apr 22 21:16 /home
+			foobar@debian12:~$ 
+			foobar@debian12:~$ 
+			foobar@debian12:~$ ls -ld /home/foobar
+			drwxr-xr-x 5 foobar foobar 4096 Apr 21 22:21 /home/foobar
+			foobar@debian12:~$
+			```			
 	- Required access rights for standard file/directory actions:
 
 | Action | Command | File | Directory |
