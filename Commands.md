@@ -1,6 +1,10 @@
 # Commands
 
 - `cat`
+- `cd`
+    - `cd -`
+    - `cd ~`
+    - `cd ..`
 - `export` - lists environment variables
     ```
     foobar@debian12:~$ export
@@ -39,6 +43,8 @@
         - `n / shift+n` - repeats forward/backward search        
 - `ls`
     - `ls -l`
+    - `ls -lStr` - size, modification time, reverse
+    - `ls -lR` - list all files from subdirectories also
 - `mapfile` - to read an entire text file line by line into the elements of an array
     ```
     foobar@debian12:~$ cat users.txt 
