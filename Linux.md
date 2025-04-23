@@ -88,7 +88,6 @@
 			foobar@debian12:~$
 			```			
 	- Required access rights for standard file/directory actions:
-
 | Action | Command | File | Directory |
 | ------ | ------- | ---- | --------- |
 | Change to directory | `cd directory` | - | `x` |			
