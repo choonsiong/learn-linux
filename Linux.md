@@ -41,4 +41,6 @@
 	- Case-sensitive
 	- Spaces in file names are permitted but often cause problems when they are processed by scripts
 		- Avoid using spaces!!!
-	-
+	- International characters in the file name are allowed, but can cause problems if different character sets are used, such as on a network
+		- From the point of view of the Linux kernel, the file name is simply a byte sequence in which only the / character and the code 0 must not occur
+			- The question how this byte sequence is interpreted depends on the currently valid character set
