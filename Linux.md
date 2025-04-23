@@ -47,3 +47,5 @@
 	- File names may contain any number of dots
 	- Files that start with a dot are considered hidden files
 	- The size of files is almost unlimited with current Linux distributions and is in the terabyte range depending on the file system
+	- The directory tree of Linux starts in the root directory `/`
+	- Home directory `/home/<loginname>`, `~`, `~<loginname>`
