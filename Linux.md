@@ -128,3 +128,4 @@
 			drwxrwxrwt 18 root root 4096 Apr 24 03:42 /tmp
 			root@debian12:/#
 			```		
+		- the meaning of the sticky bit is specific to Linux, in other Unix variants, the bit may have a different meaning or no meaning at all
