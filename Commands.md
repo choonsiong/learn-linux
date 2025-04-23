@@ -86,6 +86,8 @@
     declare -x XDG_SESSION_TYPE="tty"
     foobar@debian12:~$ 
     ```
+- `find`
+    - `find . -name '*.log'`
 - `less` (or `more`)
     - `less file`
     - `ls -l | less`
@@ -99,6 +101,8 @@
     - `ls -l`
     - `ls -lStr` - size, modification time, reverse
     - `ls -lR` - list all files from subdirectories also
+    - `ls *.log | sed 's/\(.*\)\.log$/cp & \1.txt/' | sh` - copy all *.log to *.txt
+        - `.*` in sed means anything (any number of any characters, except newline)
 - `mapfile` - to read an entire text file line by line into the elements of an array
     ```
     foobar@debian12:~$ cat users.txt 
