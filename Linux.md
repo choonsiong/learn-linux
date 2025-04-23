@@ -52,3 +52,4 @@
 	- Two special directories, `.` and `..`
 		- `.` is a reference to the current directory
 		- `..` is a reference to the parent directory
+	- A file may be deleted by anyone who has the `w` and `x` rights for the directory
