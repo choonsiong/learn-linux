@@ -100,3 +100,6 @@
 | Delete file | `rm directory/file` | - | `wx` |
 | Run program | `directory/program` | `x` | `x` |
 | Run script file | `directory/script` | `rx` | `x` |
+
+	- **setuid bit**
+	- **setgid bit**
