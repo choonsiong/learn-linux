@@ -9,6 +9,33 @@
     - `cp -r source /tmp/dest`
         - if dest exists, then becomes /tmp/dest/source
         - if dest doesn't exists, then becomes /tmp/dest with contents from source
+    - `cp -a` to preserve access rights and times (-r included)
+- `df`
+    - `df -h`
+        ```
+        root@debian12:~# df -h
+        Filesystem      Size  Used Avail Use% Mounted on
+        udev            1.9G     0  1.9G   0% /dev
+        tmpfs           393M  1.4M  391M   1% /run
+        /dev/sda2        62G  5.9G   53G  11% /
+        tmpfs           2.0G     0  2.0G   0% /dev/shm
+        tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+        /dev/sda1       512M  6.1M  506M   2% /boot/efi
+        mbp2022backup   4.6T  3.5T  1.1T  77% /media/psf/mbp2022backup
+        iCloud          3.7T  868G  2.8T  24% /media/psf/iCloud
+        tmpfs           393M   76K  393M   1% /run/user/112
+        tmpfs           393M   60K  393M   1% /run/user/1001
+        root@debian12:~#
+
+        root@debian12:~# df -h -x tmpfs -x squashfs
+        Filesystem      Size  Used Avail Use% Mounted on
+        udev            1.9G     0  1.9G   0% /dev
+        /dev/sda2        62G  5.9G   53G  11% /
+        /dev/sda1       512M  6.1M  506M   2% /boot/efi
+        mbp2022backup   4.6T  3.5T  1.1T  77% /media/psf/mbp2022backup
+        iCloud          3.7T  868G  2.8T  24% /media/psf/iCloud
+        root@debian12:~# 
+        ```    
 - `export` - lists environment variables
     ```
     foobar@debian12:~$ export
@@ -122,6 +149,10 @@
     foobar@debian12:~$
     ```
 - `reset` - reset the terminal (e.g., the terminal shows only cryptic characters...)
+- `rm`
+    - `rm -rf`
+- `rmdir`
+    - only workds if directory is empty
 - `set` - lists all variables
 - `tail`
 - `tee` - the standard output is first forwarded to the `tee` command, 
