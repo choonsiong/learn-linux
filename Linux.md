@@ -77,3 +77,8 @@
 | Determine list of files | `ls directory/*` | - | `r` |
 | Read file information | `ls -l directory/*` | - | `rx` |
 | Create new file | `touch directory/newfile` | - | `wx` |
+| Read file | `less directory/file` | `r` | `x` |
+| Change existing file | `cat >>directory/file` | `w` | `x` |
+| Delete file | `rm directory/file` | - | `wx` |
+| Run program | `directory/program` | `x` | `x` |
+| Run script file | `directory/script` | `rx` | `x` |
