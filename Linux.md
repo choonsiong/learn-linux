@@ -100,35 +100,38 @@
 	| Delete file | `rm directory/file` | - | `wx` |
 	| Run program | `directory/program` | `x` | `x` |
 	| Run script file | `directory/script` | `rx` | `x` |
-	- **setuid bit** - often called the *suid bit*
-		- it causes programs to always run as if the owner himself had started the program
-		- internally, the user identification number of the owner of the file and not the UID of the current user is used for the execution of the program
-		- use to give additional rights to ordinary owners, which are valid only when this program is executed, e.g., `passwd`
-			- lowercase `s` if the execute bit is also set (normal case), an uppercase `S` if only the setuid bit but not the execute bit is set
-				```
-				andy@debian12:~$ ls -l `which passwd`
-				-rwsr-xr-x 1 root root 72048 Mar 23  2023 /usr/bin/passwd
-				andy@debian12:~$
-				```		
-			- octal mode is `4000`
-		- `chmod u+s file`, `chmod u-s file`
-	- **setgid bit**
-		- similar to `suid bit`, the group identification number of the file is used during the execution of the program, not the group ID (GID) of the current user, octal value is `2000`
-		- for directories, the setgid bit has a completely different meaning
-			- if it is set, newly created files within this directory will be assigned the group of the directory - instead of the group of the person who creates the file
-				- e.g., multiple users share a directory
+	- Special bits
+		- **setuid bit** - often called the *suid bit*
+			- it causes programs to always run as if the owner himself had started the program
+			- internally, the user identification number of the owner of the file and not the UID of the current user is used for the execution of the program
+			- use to give additional rights to ordinary owners, which are valid only when this program is executed, e.g., `passwd`
+				- lowercase `s` if the execute bit is also set (normal case), an uppercase `S` if only the setuid bit but not the execute bit is set
 					```
-					root@debian12:/# ls -ld /company/marketing
-					drwxrws--- 3 root marketing 4096 Apr 24 03:42 /company/marketing
-					root@debian12:/#
-					```				
-		- `chmod g+s file`, `chmod g-s file`
-	- **sticky bit**
-		- for directories in which everyone is allowed to change the files, the *sticky bit* makes sure that everyone is only allowed to delete their own files and not those of other users, e.g. in `/tmp`, `ls -l` displays the letter `t` instead of the `x` for all valid access bits in such programs, octal value is `1000`
-			```
-			root@debian12:/# ls -ld /tmp
-			drwxrwxrwt 18 root root 4096 Apr 24 03:42 /tmp
-			root@debian12:/#
-			```		
-		- the meaning of the sticky bit is specific to Linux, in other Unix variants, the bit may have a different meaning or no meaning at all
-		- `chmod +t file`, `chmod -t file`
+					andy@debian12:~$ ls -l `which passwd`
+					-rwsr-xr-x 1 root root 72048 Mar 23  2023 /usr/bin/passwd
+					andy@debian12:~$
+					```		
+				- octal mode is `4000`
+			- `chmod u+s file`, `chmod u-s file`
+		- **setgid bit**
+			- similar to `suid bit`, the group identification number of the file is used during the execution of the program, not the group ID (GID) of the current user, octal value is `2000`
+			- for directories, the setgid bit has a completely different meaning
+				- if it is set, newly created files within this directory will be assigned the group of the directory - instead of the group of the person who creates the file
+					- e.g., multiple users share a directory
+						```
+						root@debian12:/# ls -ld /company/marketing
+						drwxrws--- 3 root marketing 4096 Apr 24 03:42 /company/marketing
+						root@debian12:/#
+						```				
+			- `chmod g+s file`, `chmod g-s file`
+			- to delete the setgit bit from directories: if `chmod 0770 dir` leaves the setgid bit unchanged, then try `chmod 00770 dir` or `chmod g-s dir`
+		- **sticky bit**
+			- for directories in which everyone is allowed to change the files, the *sticky bit* makes sure that everyone is only allowed to delete their own files and not those of other users, e.g. in `/tmp`, `ls -l` displays the letter `t` or `T` instead of the `x` for all valid access bits in such programs, octal value is `1000`
+				```
+				root@debian12:/# ls -ld /tmp
+				drwxrwxrwt 18 root root 4096 Apr 24 03:42 /tmp
+				root@debian12:/#
+				```		
+			- the meaning of the sticky bit is specific to Linux, in other Unix variants, the bit may have a different meaning or no meaning at all
+			- `chmod +t file`, `chmod -t file`
+		- the uppercase `S` and `T` are only applied if the corresponding execute bit is not set, this is usually an indication that the special bits are being used incorrectly
