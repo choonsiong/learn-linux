@@ -62,3 +62,7 @@
 		crw--w---- 1 Debian-gdm tty 4, 1 Apr 23 21:59 /dev/tty1
 		foobar@debian12:~$
 		```
+	- `rwx` for directories
+		- `r` - allows user to get the list of file names (`ls` command)
+		- `w` - gives user the right to change the contents of a directory (e.g., create new file, rename or delete existing file)
+		- `x` - allows user to change a directory (`cd` command)
