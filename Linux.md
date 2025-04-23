@@ -111,6 +111,7 @@
 				andy@debian12:~$
 				```		
 			- octal mode is `4000`
+		- `chmod u+s file`, `chmod u-s file`
 	- **setgid bit**
 		- similar to `suid bit`, the group identification number of the file is used during the execution of the program, not the group ID (GID) of the current user, octal value is `2000`
 		- for directories, the setgid bit has a completely different meaning
@@ -121,6 +122,7 @@
 					drwxrws--- 3 root marketing 4096 Apr 24 03:42 /company/marketing
 					root@debian12:/#
 					```				
+		- `chmod g+s file`, `chmod g-s file`
 	- **sticky bit**
 		- for directories in which everyone is allowed to change the files, the *sticky bit* makes sure that everyone is only allowed to delete their own files and not those of other users, e.g. in `/tmp`, `ls -l` displays the letter `t` instead of the `x` for all valid access bits in such programs, octal value is `1000`
 			```
@@ -129,3 +131,4 @@
 			root@debian12:/#
 			```		
 		- the meaning of the sticky bit is specific to Linux, in other Unix variants, the bit may have a different meaning or no meaning at all
+		- `chmod +t file`, `chmod -t file`
