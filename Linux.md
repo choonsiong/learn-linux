@@ -53,3 +53,12 @@
 		- `.` is a reference to the current directory
 		- `..` is a reference to the parent directory
 	- A file may be deleted by anyone who has the `w` and `x` rights for the directory
+	- Access to hardware components such as hard disks, DVD drives, interfaces, and so on is provided on Linux via devices
+		```
+		foobar@debian12:~$ 
+		foobar@debian12:~$ ls -l /dev/sda
+		brw-rw---- 1 root disk 8, 0 Apr 23 21:59 /dev/sda
+		foobar@debian12:~$ ls -l /dev/tty1
+		crw--w---- 1 Debian-gdm tty 4, 1 Apr 23 21:59 /dev/tty1
+		foobar@debian12:~$
+		```
