@@ -65,4 +65,8 @@
 	- `rwx` for directories
 		- `r` - allows user to get the list of file names (`ls` command)
 		- `w` - gives user the right to change the contents of a directory (e.g., create new file, rename or delete existing file)
-		- `x` - allows user to change a directory (`cd` command)
+		- `x` - allows user to change to a directory (`cd` command)
+		-  only the `rx` combination makes it possible to process a directory correctly (e.g., `ls -l` to list files)
+			- if both `xw` are set, new files can be created in the directory
+		- the behavior of `rx` is due to the fact that directories are regarded by the file system as a special case of a file
+			- the contents of the "file" directory is a listing of the names of the files that are in the directory and their inode numbers
