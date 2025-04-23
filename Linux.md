@@ -104,6 +104,7 @@
 		- it causes programs to always run as if the owner himself had started the program
 		- internally, the user identification number of the owner of the file and not the UID of the current user is used for the execution of the program
 		- use to give additional rights to ordinary owners, which are valid only when this program is executed, e.g., `passwd`
+			- lowercase `s` if the execute bit is also set (normal case), an uppercase `S` if only the setuid bit but not the execute bit is set
 			```
 			andy@debian12:~$ ls -l `which passwd`
 			-rwsr-xr-x 1 root root 72048 Mar 23  2023 /usr/bin/passwd
