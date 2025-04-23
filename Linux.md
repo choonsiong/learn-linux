@@ -101,5 +101,13 @@
 	| Run program | `directory/program` | `x` | `x` |
 	| Run script file | `directory/script` | `rx` | `x` |
 	- **setuid bit** - often called the *suid bit*
+		- it causes programs to always run as if the owner himself had started the program
+		- internally, the user identification number of the owner of the file and not the UID of the current user is used for the execution of the program
+		- use to give additional rights to ordinary owners, which are valid only when this program is executed, e.g., `passwd`
+			```
+			andy@debian12:~$ ls -l `which passwd`
+			-rwsr-xr-x 1 root root 72048 Mar 23  2023 /usr/bin/passwd
+			andy@debian12:~$
+			```		
 	- **setgid bit**
 	- **sticky bit**
