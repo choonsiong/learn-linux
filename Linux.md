@@ -74,6 +74,7 @@
 		- In practice, it's usually convenient to set the `r` bit for base directories as well
 			- If the read permission is missing, the user must know the name of the subdirectory
 		- The operations permitted in the subdirectory depend exclusively on the `rwx` bits of this directory
+			- If the `rwx` rights are set for the subdirectory, files can be read, created, modified, and deleted - even if the `r` and `w` rights are missing in the base directories
 	- Required access rights for standard file/directory actions:
 
 | Action | Command | File | Directory |
