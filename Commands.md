@@ -5,6 +5,10 @@
     - `cd -`
     - `cd ~`
     - `cd ..`
+- `cp`
+    - `cp -r source /tmp/dest`
+        - if dest exists, then becomes /tmp/dest/source
+        - if dest doesn't exists, then becomes /tmp/dest with contents from source
 - `export` - lists environment variables
     ```
     foobar@debian12:~$ export
