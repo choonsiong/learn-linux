@@ -110,6 +110,9 @@
         - `/` - forward search
         - `?` - backward search
         - `n / shift+n` - repeats forward/backward search        
+- `ln`
+    - `ln abc xyz` - create hard link
+    - `ln -s abc xyz` - create soft link
 - `locate`
 - `ls`
     - `ls -l`
