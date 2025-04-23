@@ -5,6 +5,9 @@
     - `cd -`
     - `cd ~`
     - `cd ..`
+- `chgrp`
+- `chmod`
+- `chown`
 - `cp`
     - `cp -r source /tmp/dest`
         - if dest exists, then becomes /tmp/dest/source
