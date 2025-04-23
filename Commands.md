@@ -203,6 +203,8 @@
 - `rmdir`
     - only workds if directory is empty
 - `set` - lists all variables
+- `stat`
+    - `stat -c "%a %n" *`
 - `tail`
 - `tee` - the standard output is first forwarded to the `tee` command, 
     ```
@@ -255,5 +257,7 @@
     tecnomen@debian12:~$ 
     tecnomen@debian12:~$ 
     ```
+- `usermod`
+    - `usermod -a -G dialout foobar`
 - `whereis`
 - `which`    
