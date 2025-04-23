@@ -36,3 +36,9 @@
 - [GPL (General Public License)](https://www.gnu.org/licenses/gpl-3.0.html) is backed by the Free Software Foundation (FSF), an organization founded by *Richard Stallman* to make high-quality software freely available.
 	- [FAQ about the GNU licenses](https://www.gnu.org/licenses/gpl-faq.html)
 	- [GPL quiz](https://www.gnu.org/cgi-bin/license-quiz.cgi)
+- Files and directories
+	- On Linux, file names with lengths of up to 255 characters are permitted
+	- Case-sensitive
+	- Spaces in file names are permitted but often cause problems when they are processed by scripts
+		- Avoid using spaces!!!
+	-
