@@ -70,6 +70,7 @@
 			- if both `xw` are set, new files can be created in the directory
 		- the behavior of `rx` is due to the fact that directories are regarded by the file system as a special case of a file
 			- the contents of the "file" directory is a listing of the names of the files that are in the directory and their inode numbers
+	- Required access rights for standard file/directory actions:
 
 | Action | Command | File | Directory |
 | ------ | ------- | ---- | --------- |
