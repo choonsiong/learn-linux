@@ -87,8 +87,20 @@
     foobar@debian12:~$ 
     ```
 - `find`
+    - `find` - returns a list of all files in the current and in all subdirectories
     - `find . -name '*.log'`
     - `find -maxdepth 1 -type f -name '.*'`
+    - `find /var/log -path '*http/*.log'`
+    - `find /etc -type d | sort`
+    - `find /home -group users -mtime -5` - modified in the last five days
+    - `find /home -group users -mtime +5` - modified more than five days ago
+    - `find /home -group users -mtime 5` - modified exactly five days ago
+    - `find -name '*.log' -type f -exec grep -q emacs {} \; -print`
+    - `find -name '*' -maxdepth 1 -size -10k -exec grep -q case.*in {} \; -print > result`
+- `grep`
+    - `grep emacs *.tex`
+    - `grep -c 'arctan\(.*\)' *.c`
+    - `grep -v '^#' file | cat -s > nocomments`
 - `less` (or `more`)
     - `less file`
     - `ls -l | less`
@@ -98,8 +110,10 @@
         - `/` - forward search
         - `?` - backward search
         - `n / shift+n` - repeats forward/backward search        
+- `locate`
 - `ls`
     - `ls -l`
+    - `ls -li` - shows inode
     - `ls -lStr` - size, modification time, reverse
     - `ls -lR` - list all files from subdirectories also
     - `ls *.log | sed 's/\(.*\)\.log$/cp & \1.txt/' | sh` - copy all *.log to *.txt
@@ -179,6 +193,7 @@
 - `reset` - reset the terminal (e.g., the terminal shows only cryptic characters...)
 - `rm`
     - `rm -rf`
+    - `rm $(find . -name '*~')` - delete all backup files in the current and all subdirectories
 - `rmdir`
     - only workds if directory is empty
 - `set` - lists all variables
@@ -234,3 +249,5 @@
     tecnomen@debian12:~$ 
     tecnomen@debian12:~$ 
     ```
+- `whereis`
+- `which`    
