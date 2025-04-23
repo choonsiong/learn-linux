@@ -70,6 +70,10 @@
 			- if both `xw` are set, new files can be created in the directory
 		- the behavior of `rx` is due to the fact that directories are regarded by the file system as a special case of a file
 			- the contents of the "file" directory is a listing of the names of the files that are in the directory and their inode numbers
+	- For nested directories, if the `x` bit isn't set, the subdirectories cannot be used
+		- In practice, it's usually convenient to set the `r` bit for base directories as well
+			- If the read permission is missing, the user must know the name of the subdirectory
+		- The operations permitted in the subdirectory depend exclusively on the `rwx` bits of this directory
 	- Required access rights for standard file/directory actions:
 
 | Action | Command | File | Directory |
