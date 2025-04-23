@@ -110,5 +110,21 @@
 				-rwsr-xr-x 1 root root 72048 Mar 23  2023 /usr/bin/passwd
 				andy@debian12:~$
 				```		
+			- octal mode is `4000`
 	- **setgid bit**
+		- similar to `suid bit`, the group identification number of the file is used during the execution of the program, not the group ID (GID) of the current user, octal value is `2000`
+		- for directories, the setgid bit has a completely different meaning
+			- if it is set, newly created files within this directory will be assigned the group of the directory - instead of the group of the person who creates the file
+				- e.g., multiple users share a directory
+					```
+					root@debian12:/# ls -ld /company/marketing
+					drwxrws--- 3 root marketing 4096 Apr 24 03:42 /company/marketing
+					root@debian12:/#
+					```				
 	- **sticky bit**
+		- for directories in which everyone is allowed to change the files, the *sticky bit* makes sure that everyone is only allowed to delete their own files and not those of other users, e.g. in `/tmp`, `ls -l` displays the letter `t` instead of the `x` for all valid access bits in such programs, octal value is `1000`
+			```
+			root@debian12:/# ls -ld /tmp
+			drwxrwxrwt 18 root root 4096 Apr 24 03:42 /tmp
+			root@debian12:/#
+			```		
