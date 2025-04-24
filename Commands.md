@@ -125,6 +125,8 @@
     [foobar@client2 tmp]$ 
     [foobar@client2 tmp]$    
     ```
+- `ionice` - set io priority
+    - `ionice -c 3 cat /dev/vg1/snap | lzop -c > /backup/image.lzo`
 - `iotop`
     - `iotop -o` - restricts output to processes that actually cause IO activity
     - `iotop -u` - restricts output to your own processes
