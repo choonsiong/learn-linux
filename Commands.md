@@ -276,6 +276,20 @@
     [foobar@client2 tmp]$ umask
     0022
     [foobar@client2 tmp]$ 
+    [foobar@client2 tmp]$ ls -l demo
+    -rw-r--r-- 1 foobar foobar 0 Apr 24 19:27 demo
+    [foobar@client2 tmp]$ 
+    [foobar@client2 tmp]$ 
+    [foobar@client2 tmp]$ umask 2
+    [foobar@client2 tmp]$ 
+    [foobar@client2 tmp]$ touch demo2
+    [foobar@client2 tmp]$ 
+    [foobar@client2 tmp]$ ls -l demo2
+    -rw-rw-r-- 1 foobar foobar 0 Apr 24 19:36 demo2
+    [foobar@client2 tmp]$ 
+    [foobar@client2 tmp]$ ls -l demo
+    -rw-r--r-- 1 foobar foobar 0 Apr 24 19:27 demo
+    [foobar@client2 tmp]$
     ```
 - `usermod`
     - `usermod -a -G dialout foobar`
