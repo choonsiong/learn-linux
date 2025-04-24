@@ -310,6 +310,8 @@
             ```            
         - if the first column is prefixed with `%`, the entry applies to all members of the specified group
         - only edit with `visudo` command
+    - `sudo -u <account>`
+    - `sudo -u alice /usr/bin/parted /dev/sda`
 - `tail`
 - `tee` - the standard output is first forwarded to the `tee` command, 
     ```
