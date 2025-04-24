@@ -37,6 +37,18 @@
 	- [FAQ about the GNU licenses](https://www.gnu.org/licenses/gpl-faq.html)
 	- [GPL quiz](https://www.gnu.org/cgi-bin/license-quiz.cgi)
 - [FHS (Filesystem Hierarchy Standard)](https://refspecs.linuxfoundation.org/fhs.shtml)	
+	- `/` - The file system starts with the root directory. There are usually no files there, only directories.
+		- `/bin` - commands for system administration that can be executed by all users, in modern distributions, `/bin` is simply link to `/usr/bin`
+		- `/boot` - contains files that are used to boot the system, in most distributions, the kernel is also located here
+		- `/dev` - contains all device files
+			- in most distributions, the `/dev` directory is located in a RAM disk
+		- `/etc` - contains configuration files for the entire system
+		- `/home` - contains the home directories of all regular Linux users
+			- `/root` - home directory for `root` user
+		- `/lib[64]` - contains some shared libraries or symbolic links to them, other libraries are located in `/usr/lib[64]`, in current distributions, `lib` is a link to `/usr/lib`
+			- `/lib/modules` - contains kernel modules that are dynamically enabled or disabled during operation
+			- `/lib/firmware` - contains the firmware of various hardware components
+		- `/lost+found` - exists only in `ext` file systems
 - Files and directories
 	- On Linux, file names with lengths of up to 255 characters are permitted
 	- Case-sensitive

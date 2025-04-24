@@ -100,6 +100,7 @@
     - `find /home -group users -mtime 5` - modified exactly five days ago
     - `find -name '*.log' -type f -exec grep -q emacs {} \; -print`
     - `find -name '*' -maxdepth 1 -size -10k -exec grep -q case.*in {} \; -print > result`
+- `fsck`
 - `grep`
     - `grep emacs *.tex`
     - `grep -c 'arctan\(.*\)' *.c`
