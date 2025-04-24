@@ -327,6 +327,8 @@
     - `sudo ls /etc > /etc/ls-out.txt` will not work (it is executed directly by the sell, not by `sudo`)
         - use `sudo sh -c 'ls /etc > /etc/ls-out.txt'` (passing a shell to `sudo` and executing the desired command in it)
     - `sudo bash script.sh` or `sudo ./script.sh`
+- `systemctl`
+    - `systemctl start|stop|status|restart|reload|enable|disable name`
 - `tail`
 - `tee` - the standard output is first forwarded to the `tee` command, 
     ```
