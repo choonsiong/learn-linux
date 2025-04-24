@@ -221,3 +221,10 @@
 				tecnomen@ubuntu-tecnotree:~$ 
 				```			
 			- Some of these subprocesses are prefixed with a number that indicates the CPU, e.g., `kblockd/0` manages the block device buffer for the first CPU, `kblockd/1` for the second CPU
+			- Most kernel threads are related to the low-level tasks of the operating system (memory management, process management, CPU control, etc.)
+			- Usually started during system initialization (count all kernel threads below)
+				```
+				tecnomen@ubuntu-tecnotree:~$ ps -f -p 2 --ppid 2 | wc -l
+				95
+				tecnomen@ubuntu-tecnotree:~$ 
+				```			
