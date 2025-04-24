@@ -48,7 +48,15 @@
 		- `/lib[64]` - contains some shared libraries or symbolic links to them, other libraries are located in `/usr/lib[64]`, in current distributions, `lib` is a link to `/usr/lib`
 			- `/lib/modules` - contains kernel modules that are dynamically enabled or disabled during operation
 			- `/lib/firmware` - contains the firmware of various hardware components
-		- `/lost+found` - exists only in `ext` file systems
+		- `/lost+found` - exists only in `ext` file systems, contains file fragments that could no longer be allocated when `fsck` attempted to repair the file system
+		- `/media` - contains subdirectories like `cdrom` where external file systems are mounted
+			- traditionally, `/mnt` was used for this
+		- `/opt` - intended for add-on packages
+		- `/proc` - contains subdirectories for all running processes
+			- these are not real files! merely reflects the administration of the processes within Linux
+		- `/root` - contains the files of the `root` user
+		- `/run` - contains files with the process IDs and other information of some system services for many current distributions
+			- in the past, these files were stored in the `/var/run` directory
 - Files and directories
 	- On Linux, file names with lengths of up to 255 characters are permitted
 	- Case-sensitive
