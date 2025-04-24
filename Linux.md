@@ -190,4 +190,6 @@
 			- `chmod +t file`, `chmod -t file`
 		- the uppercase `S` and `T` are only applied if the corresponding execute bit is not set, this is usually an indication that the special bits are being used incorrectly
 - Processes
-	- At the operating system level, a process is responsible for the execution of a program or command		
+	- At the operating system level, a process is responsible for the execution of a program or command	
+	- Internally, the PID number of the parent process is also stored with each process
+		- This information enables the representation of a process tree, at the top of which there is always the `systemd` program	

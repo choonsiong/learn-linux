@@ -236,6 +236,33 @@
             18 ?        S      0:00 [migration/0]
             19 ?        I      0:01 [kworker/0:1-events]
         ```    
+- `pstree`
+    ```
+    [root@client2 ~]# pstree
+    systemd─┬─NetworkManager───2*[{NetworkManager}]
+            ├─agetty
+            ├─atd
+            ├─auditd─┬─sedispatch
+            │        └─2*[{auditd}]
+            ├─chronyd
+            ├─crond
+            ├─dbus-broker-lau───dbus-broker
+            ├─firewalld───{firewalld}
+            ├─gssproxy───5*[{gssproxy}]
+            ├─irqbalance───{irqbalance}
+            ├─lsmd
+            ├─polkitd───5*[{polkitd}]
+            ├─rhsmcertd───{rhsmcertd}
+            ├─rpcbind
+            ├─rsyslogd───2*[{rsyslogd}]
+            ├─sshd───sshd───sshd───bash───su───bash───pstree
+            ├─systemd───(sd-pam)
+            ├─systemd-journal
+            ├─systemd-logind
+            ├─systemd-udevd
+            └─tuned───3*[{tuned}]
+    [root@client2 ~]#
+    ```
 - `read` - process user input
     ```
     foobar@debian12:~$ 
