@@ -156,6 +156,12 @@
     - `ls -lR` - list all files from subdirectories also
     - `ls *.log | sed 's/\(.*\)\.log$/cp & \1.txt/' | sh` - copy all *.log to *.txt
         - `.*` in sed means anything (any number of any characters, except newline)
+- `lsof`
+    - `lsof -i :8080` - shows processes using TCP or UDP port 8080
+    - `lsof -i` - list all open network connections
+    - `lsof -u alice` - show all files opened by alice
+    - `lsof +D /var/log` - find all open files in a directory
+    - `lsof | grep deleted` - find deleted files still held open
 - `mapfile` - to read an entire text file line by line into the elements of an array
     ```
     foobar@debian12:~$ cat users.txt 
