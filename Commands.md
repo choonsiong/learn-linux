@@ -127,6 +127,18 @@
     [foobar@client2 tmp]$ 
     [foobar@client2 tmp]$    
     ```
+- `hostname` - displays the host name
+    - `hostname -I` - shows the IP addresses under which the computer is visible to the outside world or within the local network
+        ```
+        tecnomen@ubuntu-tecnotree:~$ 
+        tecnomen@ubuntu-tecnotree:~$ hostname
+        ubuntu-tecnotree
+        tecnomen@ubuntu-tecnotree:~$ 
+        tecnomen@ubuntu-tecnotree:~$ hostname -I
+        10.211.55.4 172.17.0.1 192.168.49.1 192.168.240.218 fdb2:2c26:f4e4:0:e659:140f:ebce:3b52 fdb2:2c26:f4e4:0:f56f:6f0d:13a:a405 
+        tecnomen@ubuntu-tecnotree:~$ 
+        tecnomen@ubuntu-tecnotree:~$ 
+        ```    
 - `ionice` - set io priority
     - `ionice -c 3 cat /dev/vg1/snap | lzop -c > /backup/image.lzo`
 - `iotop`
