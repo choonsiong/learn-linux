@@ -57,6 +57,20 @@
 		- `/root` - contains the files of the `root` user
 		- `/run` - contains files with the process IDs and other information of some system services for many current distributions
 			- in the past, these files were stored in the `/var/run` directory
+			- `/run/lock/` - contains locking files (or in `/var/lock`)
+		- `/sbin` - contains commands for system management, may only be executed by `root`
+			- in modern distributinos, `/sbin` is a link to `/usr/sbin`
+			- all system administration commands are now stored in `/usr/sbin`
+		- `/share` - contains architecture-independent files (files that are independen of the processor)
+			- the correct location is actually `/usr/share`
+		- `/srv` - contains data for server processes in some distributions
+			- `/srv/www` - web server
+			- `/srv/ftp` - ftp server 
+		- `/sys` - contains the `sysfs` file system
+			- like `proc`, it provides information about the state of the computer
+		- `/tmp` - contains temporary files, also stored in `/var/tmp`
+		- `/usr` - contains all application programs
+		- `/var` - contains mutable files
 - Files and directories
 	- On Linux, file names with lengths of up to 255 characters are permitted
 	- Case-sensitive
