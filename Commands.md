@@ -329,6 +329,7 @@
     - `sudo bash script.sh` or `sudo ./script.sh`
 - `systemctl`
     - `systemctl start|stop|status|restart|reload|enable|disable name`
+    - `systemctl enable --now name`
 - `tail`
 - `tee` - the standard output is first forwarded to the `tee` command, 
     ```
