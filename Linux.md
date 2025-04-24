@@ -193,4 +193,10 @@
 	- At the operating system level, a process is responsible for the execution of a program or command	
 	- Internally, the PID number of the parent process is also stored with each process
 		- This information enables the representation of a process tree, at the top of which there is always the `systemd` program
-	- Only `root` can start programs with a higher priority than 0 or increase the priority of an already running processes 	
+	- Only `root` can start programs with a higher priority than 0 or increase the priority of an already running processes
+	- Running processes
+		- Ordinary users are allowed to run only those processes where the access rights (owner, group, r and x access bits) allow it 	
+		- Processes belong to the user who started them, as it were
+			- this means that a process is allowed to access the same files as the user
+				- files that you as a user are not allowed to modify must also not be modified by programs that you start
+			- files newly created by the process also belong to the user who started the program
