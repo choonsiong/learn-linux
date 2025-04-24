@@ -310,8 +310,12 @@
             ```            
         - if the first column is prefixed with `%`, the entry applies to all members of the specified group
         - only edit with `visudo` command
-    - `sudo -u <account>`
+    - `sudo -s` - switch to root mode
+    - `sudo -u <account>` - select another account, default will run as `root`
     - `sudo -u alice /usr/bin/parted /dev/sda`
+    - `sudo ls /etc > /etc/ls-out.txt` will not work (it is executed directly by the sell, not by `sudo`)
+        - use `sudo sh -c 'ls /etc > /etc/ls-out.txt'` (passing a shell to `sudo` and executing the desired command in it)
+    - `sudo bash script.sh` or `sudo ./script.sh`
 - `tail`
 - `tee` - the standard output is first forwarded to the `tee` command, 
     ```
