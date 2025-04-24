@@ -200,3 +200,23 @@
 			- this means that a process is allowed to access the same files as the user
 				- files that you as a user are not allowed to modify must also not be modified by programs that you start
 			- files newly created by the process also belong to the user who started the program
+	- Background processes (daemons)
+		- Background processes for system management are referred to as daemons
+			- These processes are typically started as part of the init process when the computer boots up
+		- Kernel threads
+			- Besides ordinary server services like `httpd`, there are background processes, which are not real programs but subprocesses (threads) of the kernel
+			- `ps axu` puts their names in square brackets
+				```
+				tecnomen@ubuntu-tecnotree:~$ ps axu | head -10
+				USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+				root           1  0.0  0.1 168356 11704 ?        Ss   Apr24   0:01 /sbin/init
+				root           2  0.0  0.0      0     0 ?        S    Apr24   0:00 [kthreadd]
+				root           3  0.0  0.0      0     0 ?        I<   Apr24   0:00 [rcu_gp]
+				root           4  0.0  0.0      0     0 ?        I<   Apr24   0:00 [rcu_par_gp]
+				root           5  0.0  0.0      0     0 ?        I<   Apr24   0:00 [slub_flushwq]
+				root           6  0.0  0.0      0     0 ?        I<   Apr24   0:00 [netns]
+				root           8  0.0  0.0      0     0 ?        I<   Apr24   0:00 [kworker/0:0H-events_highpri]
+				root          10  0.0  0.0      0     0 ?        I<   Apr24   0:00 [mm_percpu_wq]
+				root          11  0.0  0.0      0     0 ?        S    Apr24   0:00 [rcu_tasks_rude_]
+				tecnomen@ubuntu-tecnotree:~$ 
+				```			
