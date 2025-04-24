@@ -304,10 +304,12 @@
         - `-l` ensures that all login start files are imported, which is necessary for the correct definition of `PATH`, among other things
 - `sudo`
     - `/etc/sudoers` - the file describes in three columns which users are allowed to run which programs from which computer
-    - `foobar` is allowed to execute `/usr/sbin/parted` regardless of the hostname (`ALL`), `=(ALL)` means that `foobar` may execute the command under any account
-        ```
-        foobar	ALL=(ALL) 	/usr/sbin/parted
-        ```            
+        - `foobar` is allowed to execute `/usr/sbin/parted` regardless of the hostname (`ALL`), `=(ALL)` means that `foobar` may execute the command under any  account - as root, but also as alice etc.
+            ```
+            foobar	ALL=(ALL) 	/usr/sbin/parted
+            ```            
+        - if the first column is prefixed with `%`, the entry applies to all members of the specified group
+        - only edit with `visudo` command
 - `tail`
 - `tee` - the standard output is first forwarded to the `tee` command, 
     ```
