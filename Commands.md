@@ -185,6 +185,10 @@
     ```
 - `mkfifo`
 - `newgrp` - set new primary group
+- `nice` - to launch programs with reduced or increased priority
+    - ranging from 19 (very low) to -20 (very high)
+    - by default, processes are started with priority 0
+    - `nice -n 10 ./backup-script`
 - `pidof`
     ```
     [root@client2 ~]# 
@@ -283,6 +287,7 @@
     echo "Password is: $password"
     foobar@debian12:~$
     ```
+- `renice` - to change the priority of processes that are already running    
 - `reset` - reset the terminal (e.g., the terminal shows only cryptic characters...)
 - `rm`
     - `rm -rf`
