@@ -162,6 +162,11 @@
     - `lsof -u alice` - show all files opened by alice
     - `lsof +D /var/log` - find all open files in a directory
     - `lsof | grep deleted` - find deleted files still held open
+    - `lsof -p PID` - see files opened by a process with a specific PID
+    - `lsof /path/to/file` - find out which process is using a file
+    - `lsof -iTCP`, `lsof -iUDP` - list open network files by protocol
+    - `lsof -iTCP:443 -sTCP:LISTEN` - see which process is listening on a specific port
+    - `lsof -nP` - list all open files with their file descriptors
 - `mapfile` - to read an entire text file line by line into the elements of an array
     ```
     foobar@debian12:~$ cat users.txt 
