@@ -154,8 +154,9 @@
         jkl
         root@debian12:~#
         ```
-- Pipes `|` - the output of the first command is used as input for the second command
+- Pipes `|` - Pipe allows the output of a command to be used as input for the next command
     - `ls -l | less`
+    - `dpkg -l | egrep -i 'mysql|mariadb' | sort`
 - Using FIFO files - FIFO stands for first in, first out and implements the idea of a pipe as a file
     - In practice, they are used so that two independent programs can communicate with each other
         - The following three commands first set up a FIFO file, then `ls` is started as a background process, which writes its outputs to the file.
