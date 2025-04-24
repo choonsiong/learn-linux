@@ -86,6 +86,10 @@
 		brw-rw---- 1 root disk 8, 2 Apr 24 20:12 sda2
 		tecnomen@ubuntu-tecnotree:/dev$ 
 		```			
+	- Special device files
+		- `/dev/null`
+		- `/dev/zero`
+		- `/dev/random`, `/dev/urandom`
 - Files and directories
 	- On Linux, file names with lengths of up to 255 characters are permitted
 	- Case-sensitive
