@@ -220,3 +220,4 @@
 				root          11  0.0  0.0      0     0 ?        S    Apr24   0:00 [rcu_tasks_rude_]
 				tecnomen@ubuntu-tecnotree:~$ 
 				```			
+			- Some of these subprocesses are prefixed with a number that indicates the CPU, e.g., `kblockd/0` manages the block device buffer for the first CPU, `kblockd/1` for the second CPU
