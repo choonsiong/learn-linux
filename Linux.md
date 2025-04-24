@@ -75,9 +75,17 @@
 	- These are specially marked files that do not store data, but rather connect to the Linux kernel
 	- Characterized by three piece of information
 		- the major device number - specifies which Linux kernel driver is responsible for management
-			- refer [here](https://www.kernel.org/doc/Documentation/admin-guide/devices.txt)
-		- the minor device number
+			- refer [here](https://www.kernel.org/doc/Documentation/admin-guide/devices.txt) for list of drivers
+		- the minor device number - used to differentiate between different (related) individual devices - e.g., in the driver for hard disks between different partitions
 		- the type of access (block-based or character-based)
+			- indicates whether the devices are buffered (all block-based devices such as hard disks) or not (applies to character-based devices such as the serial interface)
+		```
+		ecnomen@ubuntu-tecnotree:/dev$ ls -l sd*
+		brw-rw---- 1 root disk 8, 0 Apr 24 20:12 sda
+		brw-rw---- 1 root disk 8, 1 Apr 24 20:12 sda1
+		brw-rw---- 1 root disk 8, 2 Apr 24 20:12 sda2
+		tecnomen@ubuntu-tecnotree:/dev$ 
+		```			
 - Files and directories
 	- On Linux, file names with lengths of up to 255 characters are permitted
 	- Case-sensitive
