@@ -192,4 +192,5 @@
 - Processes
 	- At the operating system level, a process is responsible for the execution of a program or command	
 	- Internally, the PID number of the parent process is also stored with each process
-		- This information enables the representation of a process tree, at the top of which there is always the `systemd` program	
+		- This information enables the representation of a process tree, at the top of which there is always the `systemd` program
+	- Only `root` can start programs with a higher priority than 0 or increase the priority of an already running processes 	
