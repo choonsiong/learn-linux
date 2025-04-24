@@ -270,6 +270,13 @@
     tecnomen@debian12:~$ 
     tecnomen@debian12:~$ 
     ```
+- `umask` - a numerical value that specifies the bits that are subtracted from the standard access bits
+    ```
+    [foobar@client2 tmp]$ 
+    [foobar@client2 tmp]$ umask
+    0022
+    [foobar@client2 tmp]$ 
+    ```
 - `usermod`
     - `usermod -a -G dialout foobar`
 - `whereis`
