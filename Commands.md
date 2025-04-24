@@ -101,6 +101,14 @@
     - `find -name '*.log' -type f -exec grep -q emacs {} \; -print`
     - `find -name '*' -maxdepth 1 -size -10k -exec grep -q case.*in {} \; -print > result`
 - `fsck`
+- `fuser` - determine which programs access a particular file or directory
+    ```
+    [root@client2 ~]# 
+    [root@client2 ~]# fuser -v .
+                        USER        PID ACCESS COMMAND
+    /root:               root       1145 ..c.. bash
+    [root@client2 ~]#
+    ```
 - `grep`
     - `grep emacs *.tex`
     - `grep -c 'arctan\(.*\)' *.c`
