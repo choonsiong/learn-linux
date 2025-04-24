@@ -74,7 +74,8 @@
 - Device files
 	- These are specially marked files that do not store data, but rather connect to the Linux kernel
 	- Characterized by three piece of information
-		- the major device number
+		- the major device number - specifies which Linux kernel driver is responsible for management
+			- refer [here](https://www.kernel.org/doc/Documentation/admin-guide/devices.txt)
 		- the minor device number
 		- the type of access (block-based or character-based)
 - Files and directories
