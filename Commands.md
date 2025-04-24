@@ -104,6 +104,18 @@
     - `grep emacs *.tex`
     - `grep -c 'arctan\(.*\)' *.c`
     - `grep -v '^#' file | cat -s > nocomments`
+- `groups`
+    ```
+    [foobar@client2 tmp]$ groups foobar
+    foobar : foobar wheel
+    [foobar@client2 tmp]$ 
+
+    [foobar@client2 tmp]$ 
+    [foobar@client2 tmp]$ groups
+    foobar wheel
+    [foobar@client2 tmp]$ 
+    [foobar@client2 tmp]$    
+    ```
 - `less` (or `more`)
     - `less file`
     - `ls -l | less`
@@ -154,6 +166,7 @@
     foobar@debian12:~$ 
     ```
 - `mkfifo`
+- `newgrp` - set new primary group
 - `printenv` - lists only environment variables
     ```
     foobar@debian12:~$ printenv
