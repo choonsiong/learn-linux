@@ -189,3 +189,5 @@
 			- the meaning of the sticky bit is specific to Linux, in other Unix variants, the bit may have a different meaning or no meaning at all
 			- `chmod +t file`, `chmod -t file`
 		- the uppercase `S` and `T` are only applied if the corresponding execute bit is not set, this is usually an indication that the special bits are being used incorrectly
+- Processes
+	- At the operating system level, a process is responsible for the execution of a program or command		

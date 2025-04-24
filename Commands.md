@@ -195,6 +195,28 @@
     _=/usr/bin/printenv
     foobar@debian12:~$
     ```
+- `ps`
+    - process name in square brackets are processes of the kernel
+        ```
+        [foobar@client2 ~]$ ps ax
+            PID TTY      STAT   TIME COMMAND
+            1 ?        Ss     0:00 /usr/lib/systemd/systemd rhgb --switched-root --system --deserialize 31
+            2 ?        S      0:00 [kthreadd]
+            3 ?        S      0:00 [pool_workqueue_]
+            4 ?        I<     0:00 [kworker/R-rcu_g]
+            5 ?        I<     0:00 [kworker/R-rcu_p]
+            6 ?        I<     0:00 [kworker/R-slub_]
+            7 ?        I<     0:00 [kworker/R-netns]
+            10 ?        I      0:00 [kworker/u8:0-events_unbound]
+            11 ?        I<     0:00 [kworker/R-mm_pe]
+            13 ?        I      0:00 [rcu_tasks_kthre]
+            14 ?        I      0:00 [rcu_tasks_rude_]
+            15 ?        I      0:00 [rcu_tasks_trace]
+            16 ?        S      0:00 [ksoftirqd/0]
+            17 ?        I      0:00 [rcu_preempt]
+            18 ?        S      0:00 [migration/0]
+            19 ?        I      0:01 [kworker/0:1-events]
+        ```    
 - `read` - process user input
     ```
     foobar@debian12:~$ 
