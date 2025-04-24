@@ -117,6 +117,10 @@
     [foobar@client2 tmp]$ 
     [foobar@client2 tmp]$    
     ```
+- `iotop`
+    - `iotop -o` - restricts output to processes that actually cause IO activity
+    - `iotop -u` - restricts output to your own processes
+- `kill`
 - `less` (or `more`)
     - `less file`
     - `ls -l | less`
@@ -168,6 +172,13 @@
     ```
 - `mkfifo`
 - `newgrp` - set new primary group
+- `pidof`
+    ```
+    [root@client2 ~]# 
+    [root@client2 ~]# pidof sshd
+    1092 1072 775
+    [root@client2 ~]# 
+    ```
 - `printenv` - lists only environment variables
     ```
     foobar@debian12:~$ printenv
@@ -293,6 +304,7 @@
     tecnomen@debian12:~$ 
     tecnomen@debian12:~$ 
     ```
+- `top`
 - `umask` - a numerical value that specifies the bits that are subtracted from the standard access bits
     ```
     [foobar@client2 tmp]$ 
