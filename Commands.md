@@ -129,6 +129,11 @@
     - `iotop -o` - restricts output to processes that actually cause IO activity
     - `iotop -u` - restricts output to your own processes
 - `kill`
+    - `kill PID`
+    - `kill -9 PID`
+- `killall`
+    - `killall -9 firefox`
+        - all processes of this name will be terminated
 - `less` (or `more`)
     - `less file`
     - `ls -l | less`
@@ -340,6 +345,12 @@
     tecnomen@debian12:~$ 
     ```
 - `top`
+- `ulimit` - to limit the maximum memory consumption, the maximum size of created files, etc.
+    ```
+    [root@client2 ~]# ulimit
+    unlimited
+    [root@client2 ~]# 
+    ```
 - `umask` - a numerical value that specifies the bits that are subtracted from the standard access bits
     ```
     [foobar@client2 tmp]$ 
