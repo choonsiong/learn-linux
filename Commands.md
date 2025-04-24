@@ -13,6 +13,8 @@
         - if dest exists, then becomes /tmp/dest/source
         - if dest doesn't exists, then becomes /tmp/dest with contents from source
     - `cp -a` to preserve access rights and times (-r included)
+- `crontab`
+    - `crontab -e`
 - `df`
     - `df -h`
         ```
