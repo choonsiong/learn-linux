@@ -71,6 +71,12 @@
 		- `/tmp` - contains temporary files, also stored in `/var/tmp`
 		- `/usr` - contains all application programs
 		- `/var` - contains mutable files
+- Device files
+	- These are specially marked files that do not store data, but rather connect to the Linux kernel
+	- Characterized by three piece of information
+		- the major device number
+		- the minor device number
+		- the type of access (block-based or character-based)
 - Files and directories
 	- On Linux, file names with lengths of up to 255 characters are permitted
 	- Case-sensitive
