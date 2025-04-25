@@ -395,6 +395,10 @@
     - `rm $(find . -name '*~')` - delete all backup files in the current and all subdirectories
 - `rmdir`
     - only workds if directory is empty
+- `scp`
+    - `scp abc.txt desthost:~/tmp/`
+    - `scp foobar@[2001:1234:5678::1]:file.txt .` - when use IPv6, enclose it in the square bracket
+    - `scp -rp srcdir user@desthost:/destdir`
 - `set` - lists all variables
 - `ssh`
     - `ssh user@host command options` - run a command directly on the remote computer
