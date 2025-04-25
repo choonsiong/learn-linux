@@ -154,6 +154,8 @@
             link/ether 00:1c:42:3a:9e:c0 brd ff:ff:ff:ff:ff:ff
         [foobar@client2 ~]$ 
         ```    
+        - `lo` denotes the loopback interface, which is a virtual internal network interface that is always assigned the local address `127.0.0.1` (IPv4) and `::1` (IPv6)
+            - local programs on the computer can communicate with each other via these addresses
 - `kill`
     - `kill PID`
     - `kill -9 PID`
