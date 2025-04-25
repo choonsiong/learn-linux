@@ -158,7 +158,8 @@
                 inet6 fe80::21c:42ff:fef1:9e86/64 scope link noprefixroute 
                 valid_lft forever preferred_lft forever
             [foobar@client1 ~]$ 
-            ```            
+            ```
+            - the address beginning with `fe80` is only intended for internal communication on the local network            
     - `ip link` - returns a list of all network interfaces
         ```
         [foobar@client2 ~]$ ip link
