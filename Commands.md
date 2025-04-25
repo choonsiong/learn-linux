@@ -15,6 +15,10 @@
     - `cp -a` to preserve access rights and times (-r included)
 - `crontab`
     - `crontab -e`
+- `curl`
+    - `curl -T file -u username:password ftp://backupserver/dir` - transfer file to the FTP server and saves it in the `dir` directory
+    - `tar czf - dir/ | curl -T - -u username:password ftp://backupserver/name.tgz` - saves the result of the `tar` command directly in the `name.tgz` file remotely
+    - `curl https://abc.xyz`
 - `df`
     - `df -h`
         ```
@@ -204,6 +208,8 @@
         - `/` - forward search
         - `?` - backward search
         - `n / shift+n` - repeats forward/backward search        
+- `lftp`
+    - `lftp -c "open -u username,password backupserver; put www.tgz`
 - `ln`
     - `ln abc xyz` - create hard link
     - `ln -s abc xyz` - create soft link
@@ -399,6 +405,7 @@
     - `rm $(find . -name '*~')` - delete all backup files in the current and all subdirectories
 - `rmdir`
     - only workds if directory is empty
+- `rsync` - to copy or synchronize entire directory trees
 - `scp`
     - `scp abc.txt desthost:~/tmp/`
     - `scp foobar@[2001:1234:5678::1]:file.txt .` - when use IPv6, enclose it in the square bracket
