@@ -1,4 +1,4 @@
-![img](tmp/linux-banner.png)
+![img](tmp/linux-banner-small.png)
 
 - [About Linux](https://github.com/choonsiong/learn-linux/blob/main/Linux.md)
 - [Installing Linux](https://github.com/choonsiong/learn-linux/blob/main/Installation.md)
