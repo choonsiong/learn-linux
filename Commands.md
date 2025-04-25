@@ -462,6 +462,38 @@
     tecnomen@debian12:~$ 
     ```
 - `top`
+- `traceroute` - to determine which route a network packet takes from your computer to another computer and how many milliseconds the runtime is to the respective intermediate station
+    - the command won't work if there is a firewall on one of the intermediate stations that blocks UDP port 33434 used by `traceroute`
+        - in this case, `traceroute` returns only three stars for this and all other stations
+            ```
+            # from macos
+            $ traceroute google.com
+            traceroute to google.com (216.58.199.238), 64 hops max, 40 byte packets
+            1  192.168.0.1 (192.168.0.1)  3.199 ms  5.743 ms  3.062 ms
+            2  210.195.255.254 (210.195.255.254)  6.656 ms  6.161 ms  9.447 ms
+            3  10.55.49.43 (10.55.49.43)  7.302 ms
+                10.55.49.41 (10.55.49.41)  9.230 ms
+                10.55.49.43 (10.55.49.43)  9.392 ms
+            4  10.55.48.18 (10.55.48.18)  7.729 ms
+                10.55.48.14 (10.55.48.14)  8.450 ms
+                10.55.48.24 (10.55.48.24)  9.392 ms
+            5  72.14.214.196 (72.14.214.196)  11.498 ms
+                72.14.204.118 (72.14.204.118)  9.470 ms
+                72.14.204.208 (72.14.204.208)  11.321 ms
+            6  * * *
+            7  142.251.224.18 (142.251.224.18)  11.538 ms  7.749 ms  8.508 ms
+            8  kix05s02-in-f14.1e100.net (216.58.199.238)  7.365 ms
+                216.239.48.145 (216.239.48.145)  8.172 ms
+                192.178.98.222 (192.178.98.222)  7.398 ms
+
+            foobar@debian12:~$ traceroute google.com
+            traceroute to google.com (216.58.196.14), 30 hops max, 60 byte packets
+            1  kul08s09-in-f14.1e100.net (216.58.196.14)  8.928 ms  8.910 ms  8.899 ms
+            foobar@debian12:~$ traceroute yahoo.com
+            traceroute to yahoo.com (74.6.231.21), 30 hops max, 60 byte packets
+            1  media-router-fp74.prod.media.vip.ne1.yahoo.com (74.6.231.21)  288.063 ms  286.973 ms  282.818 ms
+            foobar@debian12:~$ 
+            ```        
 - `ulimit` - to limit the maximum memory consumption, the maximum size of created files, etc.
     ```
     [root@client2 ~]# ulimit
