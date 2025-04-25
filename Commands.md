@@ -417,8 +417,11 @@
     - *SSH tunnel* - provides a secure way to transfer IP packets between two computers - even if there is a firewall between the two computers that actually blocks the port
         - if the tunneling is done from the client computer, use `-L localport:localhost:remoteport`
             - `ssh -L 8080:localhost:80 username@remote` - causes port 80 of remote host to be accessible through port 8080 of the local host
+                - `-N` 
 - `ssh-keygen`
     - `ssh-keygen -f "/home/foobar/.ssh/known_hosts" -R "myhost"` - remove existing key from known host
+- `sshfs` - to integrate the file system of an external computer into the local directory
+    - `sshfs user@host /media/data`
 - `stat`
     - `stat -c "%a %n" *`
 - `su`
@@ -493,6 +496,7 @@
     tecnomen@debian12:~$ 
     tecnomen@debian12:~$ 
     ```
+- `telnet` - doesn't encrypt any data, should never be used to work on external computers
 - `top`
 - `traceroute` - to determine which route a network packet takes from your computer to another computer and how many milliseconds the runtime is to the respective intermediate station
     - the command won't work if there is a firewall on one of the intermediate stations that blocks UDP port 33434 used by `traceroute`
