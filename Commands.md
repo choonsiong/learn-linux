@@ -144,6 +144,16 @@
 - `iotop`
     - `iotop -o` - restricts output to processes that actually cause IO activity
     - `iotop -u` - restricts output to your own processes
+- `ip`
+    - `ip link` - returns a list of all network interfaces
+        ```
+        [foobar@client2 ~]$ ip link
+        1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+            link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+        2: enp0s5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+            link/ether 00:1c:42:3a:9e:c0 brd ff:ff:ff:ff:ff:ff
+        [foobar@client2 ~]$ 
+        ```    
 - `kill`
     - `kill PID`
     - `kill -9 PID`
