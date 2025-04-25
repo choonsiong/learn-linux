@@ -396,6 +396,12 @@
 - `rmdir`
     - only workds if directory is empty
 - `set` - lists all variables
+- `ssh`
+    - `ssh user@host command options` - run a command directly on the remote computer
+    - `ssh user@host tar -cf - /var/www | tar -xC ~/tmp/ -f -` - this command run `tar` on the remote machine, redirect the archive it creates to standard output (enter a dash `-` after the `-f` option), and use the standard output with `|` as input for a second `tar` command that runs locally
+        - this allows you to copy an entire directory tree securely via ssh
+- `ssh-keygen`
+    - `ssh-keygen -f "/home/foobar/.ssh/known_hosts" -R "myhost"` - remove existing key from known host
 - `stat`
     - `stat -c "%a %n" *`
 - `su`
