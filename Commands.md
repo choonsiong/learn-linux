@@ -145,6 +145,20 @@
     - `iotop -o` - restricts output to processes that actually cause IO activity
     - `iotop -u` - restricts output to your own processes
 - `ip`
+    - `ip addr`
+        - `ip addr show interface`
+            ```
+            [foobar@client1 ~]$ ip addr show enp0s5
+            2: enp0s5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+                link/ether 00:1c:42:f1:9e:86 brd ff:ff:ff:ff:ff:ff
+                inet 10.211.55.12/24 brd 10.211.55.255 scope global dynamic noprefixroute enp0s5
+                valid_lft 1162sec preferred_lft 1162sec
+                inet6 fdb2:2c26:f4e4:0:21c:42ff:fef1:9e86/64 scope global dynamic noprefixroute 
+                valid_lft 2591682sec preferred_lft 604482sec
+                inet6 fe80::21c:42ff:fef1:9e86/64 scope link noprefixroute 
+                valid_lft forever preferred_lft forever
+            [foobar@client1 ~]$ 
+            ```            
     - `ip link` - returns a list of all network interfaces
         ```
         [foobar@client2 ~]$ ip link
