@@ -250,6 +250,29 @@
     1092 1072 775
     [root@client2 ~]# 
     ```
+- `ping`
+    - `ping -4|-6`
+        ```
+        [foobar@client1 ~]$ 
+        [foobar@client1 ~]$ ping -4 localhost
+        PING  (127.0.0.1) 56(84) bytes of data.
+        64 bytes from localhost (127.0.0.1): icmp_seq=1 ttl=64 time=0.081 ms
+        64 bytes from localhost (127.0.0.1): icmp_seq=2 ttl=64 time=0.086 ms
+        ^C
+        ---  ping statistics ---
+        2 packets transmitted, 2 received, 0% packet loss, time 1057ms
+        rtt min/avg/max/mdev = 0.081/0.083/0.086/0.002 ms
+        [foobar@client1 ~]$ ping -6 localhost
+        PING localhost(localhost (::1)) 56 data bytes
+        64 bytes from localhost (::1): icmp_seq=1 ttl=64 time=0.111 ms
+        64 bytes from localhost (::1): icmp_seq=2 ttl=64 time=0.444 ms
+        64 bytes from localhost (::1): icmp_seq=3 ttl=64 time=0.117 ms
+        ^C
+        --- localhost ping statistics ---
+        3 packets transmitted, 3 received, 0% packet loss, time 2092ms
+        rtt min/avg/max/mdev = 0.111/0.224/0.444/0.155 ms
+        [foobar@client1 ~]$
+        ```
 - `printenv` - lists only environment variables
     ```
     foobar@debian12:~$ printenv
