@@ -493,6 +493,11 @@
             traceroute to yahoo.com (74.6.231.21), 30 hops max, 60 byte packets
             1  media-router-fp74.prod.media.vip.ne1.yahoo.com (74.6.231.21)  288.063 ms  286.973 ms  282.818 ms
             foobar@debian12:~$ 
+
+            root@debian12:~# traceroute -I google.com
+            traceroute to google.com (172.217.174.174), 30 hops max, 60 byte packets
+            1  kul08s11-in-f14.1e100.net (172.217.174.174)  12.819 ms  12.751 ms  12.743 ms
+            root@debian12:~# 
             ```        
 - `ulimit` - to limit the maximum memory consumption, the maximum size of created files, etc.
     ```
