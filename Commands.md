@@ -252,6 +252,15 @@
     foobar@debian12:~$ 
     ```
 - `mkfifo`
+- `mtr` - periodically sends network packets to the specified host and analyzes the responses
+    - `mtr -c 10 -r google.com`
+        ```
+        root@debian12:~# mtr -c 10 -r  google.com
+        Start: 2025-04-25T15:59:28+0800
+        HOST: debian12                    Loss%   Snt   Last   Avg  Best  Wrst StDev
+        1.|-- kul08s12-in-f14.1e100.net  0.0%    10    9.9  14.4   8.3  19.0   4.2
+        root@debian12:~# 
+        ```
 - `newgrp` - set new primary group
 - `nice` - to launch programs with reduced or increased priority
     - ranging from 19 (very low) to -20 (very high)
