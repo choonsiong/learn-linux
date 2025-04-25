@@ -103,6 +103,10 @@
     - `find -name '*.log' -type f -exec grep -q emacs {} \; -print`
     - `find -name '*' -maxdepth 1 -size -10k -exec grep -q case.*in {} \; -print > result`
 - `fsck`
+- `ftp`
+    - `ftp user@host`
+    - `ftp host`
+    - other ftp programs, `wget`, `curl`, `lftp`, `ncftp`
 - `fuser` - determine which programs access a particular file or directory
     ```
     [root@client2 ~]# 
@@ -497,6 +501,8 @@
     tecnomen@debian12:~$ 
     ```
 - `telnet` - doesn't encrypt any data, should never be used to work on external computers
+    - but... it is good for checking whether a network service is running on an external computer on a certain port and waiting for a connection to established
+        `telnet host port`
 - `top`
 - `traceroute` - to determine which route a network packet takes from your computer to another computer and how many milliseconds the runtime is to the respective intermediate station
     - the command won't work if there is a firewall on one of the intermediate stations that blocks UDP port 33434 used by `traceroute`
