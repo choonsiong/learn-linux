@@ -273,6 +273,7 @@
         rtt min/avg/max/mdev = 0.111/0.224/0.444/0.155 ms
         [foobar@client1 ~]$
         ```
+    - `ping -c 2 google.com` - this command tests both the reachability of the name server and the function of the gateway
 - `printenv` - lists only environment variables
     ```
     foobar@debian12:~$ printenv
