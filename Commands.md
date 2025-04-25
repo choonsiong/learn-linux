@@ -106,7 +106,7 @@
 - `ftp`
     - `ftp user@host`
     - `ftp host`
-    - other ftp programs, `wget`, `curl`, `lftp`, `ncftp`
+    - other ftp programs, `wget`, `curl`, `lftp`, `ncftp`, `sftp`
 - `fuser` - determine which programs access a particular file or directory
     ```
     [root@client2 ~]# 
