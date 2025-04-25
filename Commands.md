@@ -171,6 +171,20 @@
         ```    
         - `lo` denotes the loopback interface, which is a virtual internal network interface that is always assigned the local address `127.0.0.1` (IPv4) and `::1` (IPv6)
             - local programs on the computer can communicate with each other via these addresses
+    - `ip route, ip -6 route` - check the gateway configuration
+        ```
+        [foobar@client1 ~]$ 
+        [foobar@client1 ~]$ ip route
+        default via 10.211.55.1 dev enp0s5 proto dhcp src 10.211.55.12 metric 100 
+        10.211.55.0/24 dev enp0s5 proto kernel scope link src 10.211.55.12 metric 100 
+        [foobar@client1 ~]$ 
+        [foobar@client1 ~]$ ip -6 route
+        ::1 dev lo proto kernel metric 256 pref medium
+        fdb2:2c26:f4e4::/64 dev enp0s5 proto ra metric 100 pref medium
+        fe80::/64 dev enp0s5 proto kernel metric 1024 pref medium
+        default via fe80::21c:42ff:fe00:18 dev enp0s5 proto ra metric 100 pref medium
+        [foobar@client1 ~]$ 
+        ```    
 - `kill`
     - `kill PID`
     - `kill -9 PID`
