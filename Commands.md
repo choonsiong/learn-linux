@@ -570,5 +570,11 @@
     ```
 - `usermod`
     - `usermod -a -G dialout foobar`
+- `wget` 
+    - `wget ftp://host.com/file`
+    - `wget -c ftp://host.com/file` - resume download with `-c`
+    - `wget -t 20 --retry-connrefused http://downloadserver.com/bigfile.iso` - `-t 20` - retry up to 20 times after a connection failure
+    - `wget -p -k -E -H http://blog.com/page.html` - download all the files necessary to later read offline
+        - `wget -r -l 4 -p -k -E http://blog.com` - download recursively (here is 4 levels)
 - `whereis`
 - `which`    
