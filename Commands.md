@@ -414,6 +414,9 @@
         root@client1's password: 
         [foobar@client2 ~]$ 
         ```        
+    - *SSH tunnel* - provides a secure way to transfer IP packets between two computers - even if there is a firewall between the two computers that actually blocks the port
+        - if the tunneling is done from the client computer, use `-L localport:localhost:remoteport`
+            - `ssh -L 8080:localhost:80 username@remote` - causes port 80 of remote host to be accessible through port 8080 of the local host
 - `ssh-keygen`
     - `ssh-keygen -f "/home/foobar/.ssh/known_hosts" -R "myhost"` - remove existing key from known host
 - `stat`
