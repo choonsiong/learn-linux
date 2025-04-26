@@ -61,6 +61,10 @@
 	- [Top popular zsh plugins on github](https://safjan.com/top-popular-zsh-plugins-on-github/)
 - [The Z Shell Manual](https://zsh.sourceforge.io/Doc/Release/index.html)
 	- [Glob Qualifiers](https://zsh.sourceforge.io/Doc/Release/Expansion.html#Glob-Qualifiers)
+- [Vi]
+	- [Vim commands cheat sheet](https://fprintf.net/vimCheatSheet.html)
+	- [vimbook](https://truth.sk/vim/vimbook-OPL.pdf)
+	- [vimhelp](https://vimhelp.org/vim_faq.txt.html)
 
 ## Misc
 
