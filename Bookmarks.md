@@ -1,9 +1,12 @@
 # Bookmarks
 
 - [DistroWatch.com](https://distrowatch.com)
-- [Firesystem Hierarchy Standard - Specifications Archive](https://refspecs.linuxfoundation.org/fhs.shtml)
+- [Filesystem Hierarchy Standard - Specifications Archive](https://refspecs.linuxfoundation.org/fhs.shtml)
 - [GNU](https://www.gnu.org)
 	- [GPL](https://www.gnu.org/licenses/gpl-3.0.html)
+- [kernel.org](https://www.kernel.org/)
+	- [documentation](https://www.kernel.org/doc/Documentation/)
+		- [admin-guide/devices](https://www.kernel.org/doc/Documentation/admin-guide/devices.txt)
 - [OSI - Open Source Initiative](https://opensource.org)
 - [The Linux Foundation](https://www.linuxfoundation.org)
 
