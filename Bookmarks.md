@@ -63,6 +63,7 @@
 	- [Glob Qualifiers](https://zsh.sourceforge.io/Doc/Release/Expansion.html#Glob-Qualifiers)
 - [Vim](https://www.vim.org/)
 	- [neovim](https://neovim.io/)
+		- [install](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 	- [Vim commands cheat sheet](https://fprintf.net/vimCheatSheet.html)
 	- [vimbook](https://truth.sk/vim/vimbook-OPL.pdf)
 	- [vimhelp](https://vimhelp.org/vim_faq.txt.html)
