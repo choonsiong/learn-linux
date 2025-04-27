@@ -13,6 +13,8 @@
         - if dest exists, then becomes /tmp/dest/source
         - if dest doesn't exists, then becomes /tmp/dest with contents from source
     - `cp -a` to preserve access rights and times (-r included)
+    - `cp -a /etc/* /tmp/etc-backup` - backup everything in `etc`
+        - `cp -a /etc /tmp/etc-backup`
 - `crontab`
     - `crontab -e`
 - `curl`
@@ -50,6 +52,8 @@
         /dev/sda2        62G  5.9G   53G  11% /
         root@debian12:~#         
         ```    
+- `dpkg-reconfigure`
+    - `dpkg-reconfigure tzdata`
 - `du`
     - `du -h`
         ```
@@ -123,6 +127,7 @@
     - `grep emacs *.tex`
     - `grep -c 'arctan\(.*\)' *.c`
     - `grep -v '^#' file | cat -s > nocomments`
+    - `grep -r -i something` - search all subdirectories for files whose contents contain the word something
 - `groups`
     ```
     [foobar@client2 tmp]$ groups foobar
@@ -508,8 +513,34 @@
     tecnomen@debian12:~$ 
     ```
 - `telnet` - doesn't encrypt any data, should never be used to work on external computers
-    - but... it is good for checking whether a network service is running on an external computer on a certain port and waiting for a connection to established
-        `telnet host port`
+    - but... it is good for checking whether a network service is running on an external computer on a certain port and waiting for a connection to established `telnet host port`
+- `timedatectl` - `timedatectl list-timezones`, `timedatectl set-timezone Europe/Athens`
+    ```
+    root@debian12:~# timedatectl 
+                Local time: Sun 2025-04-27 17:33:27 +08
+            Universal time: Sun 2025-04-27 09:33:27 UTC
+                    RTC time: Sun 2025-04-27 09:33:28
+                    Time zone: Asia/Kuala_Lumpur (+08, +0800)
+    System clock synchronized: no
+                NTP service: inactive
+            RTC in local TZ: no
+    root@debian12:~# 
+    
+    root@debian12:~# timedatectl list-timezones | grep Asia/K
+    Asia/Kabul
+    Asia/Kamchatka
+    Asia/Karachi
+    Asia/Kashgar
+    Asia/Kathmandu
+    Asia/Katmandu
+    Asia/Khandyga
+    Asia/Kolkata
+    Asia/Krasnoyarsk
+    Asia/Kuala_Lumpur
+    Asia/Kuching
+    Asia/Kuwait
+    root@debian12:~#     
+    ```
 - `top`
 - `traceroute` - to determine which route a network packet takes from your computer to another computer and how many milliseconds the runtime is to the respective intermediate station
     - the command won't work if there is a firewall on one of the intermediate stations that blocks UDP port 33434 used by `traceroute`
