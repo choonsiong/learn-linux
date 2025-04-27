@@ -72,6 +72,19 @@
 	- [vimbook](https://truth.sk/vim/vimbook-OPL.pdf)
 	- [vimhelp](https://vimhelp.org/vim_faq.txt.html)
 
+## Services
+
+- [389 Directory Server](https://www.port389.org)
+- [Chrony](https://chrony-project.org)
+- [Cockpit](https://cockpit-project.org)
+- [cPanel](https://cpanel.net)
+- [FAI](https://fai-project.org)
+- [m23](https://m23.sourceforge.io/PostNuke-0.750/html/index.php)
+- [Plesk](https://www.plesk.com)
+- [UCS](https://www.univention.com/products/ucs/)
+- [Webmin](https://webmin.com)
+- [Zentyal](https://www.zentyal.com/community/)
+
 ## Misc
 
 - [rodsbooks.com](https://rodsbooks.com)
