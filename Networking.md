@@ -19,7 +19,7 @@ Advantages of networking:
 
 > At a higher level, networks are advantageous because they allow computers and people to be connected together so that they can share resources. Some of the specific benefits of networking include communication, data sharing, Internet access, data security and management, application performance enhancement, and entertainment.
 
-Disadvantages of networking:
+### Disadvantages of networking:
 
 - Network hardware, software, and setup costs - Setting up a network requires an investment in hardware and software, as well as funds for planning, designing, and implementing the network.
 - Hardware and software management and administration costs - In all but the smallest of implementations, ongoing maintenance and management of the network requires the care and attention of an IT professional.
