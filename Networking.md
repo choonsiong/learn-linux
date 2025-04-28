@@ -41,3 +41,9 @@ A *network* is simply a collection of computers or other hardware devices that a
 - In most cases, an individual protocol describes how communication is accomplished between one particular software or hardware element in two or more devices.
 
 > A networking protocol defines a set of rules, algorithms, messages, and other mechanisms that enables software and hardware in networked devices to communicate effectively. A protocol usually describes a means for communication between corresponding entities at the same OSI Reference Model layer in two or more devices.
+
+## Circuit Switching & Packet Switching
+
+Networks are devices that are connected together using special hardware and software that allows them to exchange information. There are many methods for exchanging information between networked devices. One fundamental way to differentiate between networking technologies is on the basis of the method used to determine the path between devices over which information will flow. A path can be set up between the devices in advance, or the data can be sent as individual data elements over a variable path.
+
+> One way that networking technologies are categorized is based on the path used to carry data between devices. In circuit switching, a circuit is first established and then used to carry all data between devices. In packet switching, no fixed path is created between devices that communicate; it is broken into packets, each of which may take a separate path from sender to recipient.
