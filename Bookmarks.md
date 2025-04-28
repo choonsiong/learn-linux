@@ -87,4 +87,6 @@
 
 ## Misc
 
+- [linuxsecurity.com](https://linuxsecurity.com/)
 - [rodsbooks.com](https://rodsbooks.com)
+- [Slashdot](https://slashdot.org/)
