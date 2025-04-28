@@ -16,3 +16,17 @@ Advantages of networking:
 - Data security and management - In a business environment, a network allows the administrators to manage the company's critical data better.
 - Performance enhancement and balancing - You can use a network to enhance the overall performance of some applications by distributing the computation tasks to various computers on the network.
 - Entertainment - Network facilitates many types of games and entertainment.
+
+> At a higher level, networks are advantageous because they allow computers and people to be connected together so that they can share resources. Some of the specific benefits of networking include communication, data sharing, Internet access, data security and management, application performance enhancement, and entertainment.
+
+Disadvantages of networking:
+
+- Network hardware, software, and setup costs - Setting up a network requires an investment in hardware and software, as well as funds for planning, designing, and implementing the network.
+- Hardware and software management and administration costs - In all but the smallest of implementations, ongoing maintenance and management of the network requires the care and attention of an IT professional.
+- Undesirable sharing - Networking allows the easy sharing of useful information, it also allows the sharing of undesirable data.
+- Illegal or undesirable behavior - Networking facilitates useful connectivity and communication, but also brings difficulties with it.
+    - abuse of company resources
+    - distraction that reduce productivity
+    - downloading of illegal or illicit materials
+    - software piracy
+- Data security concerns - If a network is implemented properly, it is possible to greatly improve the security of important data. In contrast, a poorly secured network puts critical data at risk, exposing it to the potential problems associated with hackers, unauthorized access, and even sabotage.
