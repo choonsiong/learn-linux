@@ -33,10 +33,11 @@ A *network* is simply a collection of computers or other hardware devices that a
 
 > Networking has a few drawbacks that you can weigh against its many positive aspects. Setting up a network has costs in hardware, software, maintenance, and administration. It is also necessary to manage a network to keep it running smoothly and to address possible misuse or abuse issues. Data security also becomes a much bigger concern when computers are connected together.
 
-## Network Protocols
+## Networking Protocols
 
 - Networking protocols define a language and a set of rules and procedures that enable devices and systems to communicate.
 - Networking protocols concern themselves with ensuring that all the devices on a network or internetwork are in agreement about how various actions must be performed in the total communication process.
+- A protocol is thus basically a way of ensuring that devices are able to talk to each other effectively.
 - In most cases, an individual protocol describes how communication is accomplished between one particular software or hardware element in two or more devices.
 
 > A networking protocol defines a set of rules, algorithms, messages, and other mechanisms that enables software and hardware in networked devices to communicate effectively. A protocol usually describes a means for communication between corresponding entities at the same OSI Reference Model layer in two or more devices.
