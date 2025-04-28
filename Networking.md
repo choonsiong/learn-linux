@@ -53,4 +53,10 @@ Networks are devices that are connected together using special hardware and soft
     - even if many potential paths through intermediate devices may exist between the two devices that are communicating, only one will be used for any given dialogue 
 - The classic example of a circuit-switched network is the telephone system.
 
+In a circuit-switched network, before communication can occur between two devices, a circuit is established between them. Once it's set up, all communication between these devices takes place over this circuit, even though there are other possible ways that data could conceivably be passed over the network of devices between them.
+
+### Packet Switching
+
+
+
 > One way that networking technologies are categorized is based on the path used to carry data between devices. In circuit switching, a circuit is first established and then used to carry all data between devices. In packet switching, no fixed path is created between devices that communicate; it is broken into packets, each of which may take a separate path from sender to recipient.
