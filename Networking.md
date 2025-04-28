@@ -48,15 +48,19 @@ Networks are devices that are connected together using special hardware and soft
 
 ### Circuit Switching
 
+In a circuit-switched network, before communication can occur between two devices, a circuit is established between them. Once it's set up, all communication between these devices takes place over this circuit, even though there are other possible ways that data could conceivably be passed over the network of devices between them.
+
 - In the *circuit-switching* networking method, a connection called a circuit, which is used for the whole communication, is set up between two devices.
 - The circuit may be either a fixed one that is always present or one that is created on an as-needed basis.
     - even if many potential paths through intermediate devices may exist between the two devices that are communicating, only one will be used for any given dialogue 
 - The classic example of a circuit-switched network is the telephone system.
 
-In a circuit-switched network, before communication can occur between two devices, a circuit is established between them. Once it's set up, all communication between these devices takes place over this circuit, even though there are other possible ways that data could conceivably be passed over the network of devices between them.
-
 ### Packet Switching
 
+In a packet-switched network, no circuit is set up prior to sending data between devices. Blocks of data, even from the same file or communication, may take any number of paths as they journey from one device to another.
 
+- In the *packet-switching* network type, no specific path is used for data transfer.
+- The data is chopped up into small pieces called packets and sent over the network.
+- You can route, combine, or fragment the packets as required to get them to their eventual destination. On the receiving end, the process is reversed - the data is read from the packets and reassembled to form the original data.
 
 > One way that networking technologies are categorized is based on the path used to carry data between devices. In circuit switching, a circuit is first established and then used to carry all data between devices. In packet switching, no fixed path is created between devices that communicate; it is broken into packets, each of which may take a separate path from sender to recipient.
