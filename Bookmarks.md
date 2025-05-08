@@ -88,9 +88,12 @@
 ## Misc
 
 - [computerworld.com](https://www.computerworld.com/)
+- [Daemon News](http://www.daemonnews.org/)
 - [linux-magazine.com](https://www.linux-magazine.com/)
 - [linuxsecurity.com](https://linuxsecurity.com/)
 - [networkworld.com](https://www.networkworld.com/)
 - [rodsbooks.com](https://rodsbooks.com)
 - [Slashdot](https://slashdot.org/)
+- [STATE OF SECURITY](https://stateofsecurity.com/)
 - [tcpipguide.com](http://www.tcpipguide.com/)
+- [techrepublic.com](https://www.techrepublic.com/)
