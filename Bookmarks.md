@@ -87,6 +87,9 @@
 
 ## Misc
 
+- [computerworld.com](https://www.computerworld.com/)
+- [linux-magazine.com](https://www.linux-magazine.com/)
 - [linuxsecurity.com](https://linuxsecurity.com/)
+- [networkworld.com](https://www.networkworld.com/)
 - [rodsbooks.com](https://rodsbooks.com)
 - [Slashdot](https://slashdot.org/)

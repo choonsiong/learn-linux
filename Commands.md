@@ -21,6 +21,7 @@
     - `curl -T file -u username:password ftp://backupserver/dir` - transfer file to the FTP server and saves it in the `dir` directory
     - `tar czf - dir/ | curl -T - -u username:password ftp://backupserver/name.tgz` - saves the result of the `tar` command directly in the `name.tgz` file remotely
     - `curl https://abc.xyz`
+    - [Everything Curl](https://everything.curl.dev/index.html)
 - `df`
     - `df -h`
         ```
