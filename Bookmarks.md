@@ -92,6 +92,7 @@
 - [linux-magazine.com](https://www.linux-magazine.com/)
 - [linuxsecurity.com](https://linuxsecurity.com/)
 - [networkworld.com](https://www.networkworld.com/)
+- [opensource.com](https://opensource.com/)
 - [rodsbooks.com](https://rodsbooks.com)
 - [Slashdot](https://slashdot.org/)
 - [STATE OF SECURITY](https://stateofsecurity.com/)
